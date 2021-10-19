@@ -300,8 +300,9 @@ summary:hover {
   color: #8a1919;
 }
 a {
-  color: #766;
+  color: #c19f9f;
   text-decoration: none;
+  font-weight: 600;
 }
 body {
   background-color: #232323;
@@ -501,4 +502,7 @@ input[type="search"]:focus::placeholder {
 }
 #hosting a {
   font-weight: 700;
+}
+#toggle_theme {
+  display: none;
 }
