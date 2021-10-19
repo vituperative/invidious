@@ -117,15 +117,14 @@ img.thumbnail {
   object-fit: cover;
 }
 .length {
-  z-index: 100;
+  padding: 2px 8px;
   position: absolute;
-  background-color: rgba(35, 35, 35, 0.75);
-  color: #fff;
-  border-radius: 2px;
-  padding: 2px;
-  font-size: 16px;
   right: 0.25em;
   bottom: -0.75em;
+  z-index: 100;
+  background-color: rgba(35, 35, 35, 0.75);
+  color: #fff;
+  font-size: 16px;
 }
 .watched {
   z-index: 100;
