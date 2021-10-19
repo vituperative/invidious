@@ -498,8 +498,18 @@ input[type="search"]:focus::placeholder {
   display: inline-block;
   text-align: center;
 }
+.imagethumb {
+  position: relative;
+}
 .imagethumb p[dir="auto"] {
     margin: 3px 0 -10px;
     line-height: 1.25;
     font-size: 85%;
+}
+.imagethumb .flex-right {
+ position: absolute;
+ top: 0;
+ left: 0;
+ background: #f00;
+ display: inline-block;
 }
