@@ -1,5 +1,5 @@
 <% content_for "header" do %>
-<title><%= search_query.not_nil!.size > 30 ? HTML.escape(query.not_nil![0,30].rstrip(".") + "...") : HTML.escape(query.not_nil!) %> - Invidious</title>
+<title><%= search_query.not_nil!.size > 30 ? HTML.escape(query.not_nil![0,30].rstrip(".") + "...") : HTML.escape(query.not_nil!) %> - IncogTube</title>
 <% end %>
 
 <% search_query_encoded = env.get?("search").try { |x| URI.encode_www_form(x.as(String), space_to_plus: true) } %>
