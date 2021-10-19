@@ -161,7 +161,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     width: 100%;
   }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 1200px) {
   .pure-u-md-1,
   .pure-u-md-1-1,
   .pure-u-md-1-12,
@@ -243,7 +243,8 @@ https://github.com/pure-css/pure/blob/master/LICENSE.md
     padding: 15px 0 10px;
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.4);
-    background: rgba(255,255,255,.05);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.1);
+    background: rgba(0,0,0,.15);
   }
   .pure-u-md-7-24 {
     width: 29.1667%;
