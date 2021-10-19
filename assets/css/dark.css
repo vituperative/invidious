@@ -240,7 +240,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .video-card-row {
   margin: 15px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255,255,255,.1);
 }
 .video-card-row .video-data + .video-data {
   font-weight: 600;
@@ -297,7 +297,7 @@ span > select {
 a:hover,
 a:active,
 summary:hover {
-  color: #8a1919;
+  color: #ca7740;
 }
 a {
   color: #c19f9f;
@@ -505,4 +505,10 @@ input[type="search"]:focus::placeholder {
 }
 #toggle_theme {
   display: none;
+}
+.pure-u-md-1-4,
+.pure-u-md-6-24 {
+  border: 1px solid rgba(0,0,0,.4);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.1);
+  background: rgba(0,0,0,.15);
 }
