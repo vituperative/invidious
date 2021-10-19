@@ -1,4 +1,4 @@
-html, body, small, input, textarea, h1, h2, h3, h4, h5, .pure-g, .pure-menu-heading, * {
+html, body, small, input, textarea, h1, h2, h3, h4, h5, .pure-g, .pure-menu-heading {
   font-family: BlinkMacSystemFont, -apple-system, Open Sans, segoe ui, Roboto,
     Oxygen, Ubuntu, Cantarell, fira sans, droid sans, helvetica neue, Helvetica,
     Arial, sans-serif !important;
