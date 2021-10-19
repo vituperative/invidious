@@ -501,7 +501,7 @@ input[type="search"]:focus::placeholder {
 .imagethumb {
   position: relative;
 }
-.imagethumb p[dir="auto"] {
+.imagethumb p:not(.length)[dir="auto"] {
   margin: 3px 0 -10px;
   line-height: 1.25;
   font-size: 85%;
@@ -515,7 +515,8 @@ input[type="search"]:focus::placeholder {
  background: rgba(35, 35, 35, 0.75);
 }
 .imagethumb .icon-buttons .icon {
-  margin: 3px 1px 0;
-  padding: 1px 1px 0;
+  margin: -1px 1px 0;
+  padding: 0 2px;
   display: inline-block;
+  font-size: 120%;
 }
