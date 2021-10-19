@@ -501,4 +501,5 @@ input[type="search"]:focus::placeholder {
 .imagethumb p[dir="auto"] {
     margin: 3px 0 -10px;
     line-height: 1.25;
+    font-size: 85%;
 }
