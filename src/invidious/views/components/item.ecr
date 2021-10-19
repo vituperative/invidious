@@ -27,7 +27,7 @@
                         <p class="length"><%= number_with_separator(item.video_count) %> videos</p>
                     </div>
                 <% end %>
-                <p dir="auto"><%= HTML.escape(item.title) %></p>
+                <p class="vid_title" dir="auto" title="<%= HTML.escape(item.title) %>"><%= HTML.escape(item.title) %></p>
             </a>
             <a href="/channel/<%= item.ucid %>">
                 <p dir="auto"><b><%= HTML.escape(item.author) %></b></p>
@@ -72,7 +72,7 @@
                         <% end %>
                     </div>
                 <% end %>
-                <p dir="auto"><%= HTML.escape(item.title) %></p>
+                <p class="vid_title" dir="auto" title="<%= HTML.escape(item.title) %>"><%= HTML.escape(item.title) %></p>
             </a>
 
             <div class="video-card-row flexible">
@@ -150,7 +150,7 @@
                         <% end %>
                     </div>
                 <% end %>
-                <p dir="auto"><%= HTML.escape(item.title) %></p>
+                <p class="vid_title" dir="auto" title="<%= HTML.escape(item.title) %>"><%= HTML.escape(item.title) %></p>
             </a>
 
             <div class="video-card-row flexible">
