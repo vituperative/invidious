@@ -1,4 +1,4 @@
-html, body, small, input, textarea, h1, h2, h3, h4, h5, .pure-g, .pure-menu-heading {
+html, body, small, input, textarea, h1, h2, h3, h4, h5, .pure-g, .pure-menu-heading, .video-card-row {
   font-family: BlinkMacSystemFont, -apple-system, Open Sans, segoe ui, Roboto,
     Oxygen, Ubuntu, Cantarell, fira sans, droid sans, helvetica neue, Helvetica,
     Arial, sans-serif !important;
@@ -228,6 +228,10 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .video-card-row {
   margin: 15px 0;
+  border-top: 1px solid rgba(0,0,0,.25);
+}
+.video-card-row .video-data + .video-data {
+  font-weight: 600;
 }
 .flexible {
   display: flex;
@@ -500,6 +504,7 @@ input[type="search"]:focus::placeholder {
 }
 .imagethumb {
   position: relative;
+  font-size: 90%;
 }
 .imagethumb p:not(.length)[dir="auto"] {
   margin: 3px 0 -10px;
