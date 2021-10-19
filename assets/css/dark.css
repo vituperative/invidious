@@ -297,10 +297,10 @@ span > select {
 a:hover,
 a:active,
 summary:hover {
-  color: #00b6f0;
+  color: #8a1919;
 }
 a {
-  color: #a0a0a0;
+  color: #766;
   text-decoration: none;
 }
 body {
@@ -418,7 +418,7 @@ p,
   left: 0;
   right: 0;
   z-index: 999;
-  background: #777;
+  background: #1b1b1b;
 }
 .h-box h3 small {
   display: inline-block;
