@@ -525,3 +525,6 @@ input[type="search"]:focus::placeholder {
   display: inline-block;
   font-size: 120%;
 }
+#hosting a {
+  font-weight: 700;
+}
