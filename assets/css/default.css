@@ -502,14 +502,20 @@ input[type="search"]:focus::placeholder {
   position: relative;
 }
 .imagethumb p[dir="auto"] {
-    margin: 3px 0 -10px;
-    line-height: 1.25;
-    font-size: 85%;
+  margin: 3px 0 -10px;
+  line-height: 1.25;
+  font-size: 85%;
 }
-.imagethumb .flex-right {
- position: absolute;
- top: 0;
- left: 0;
- background: #f00;
+.imagethumb .icon-buttons {
+ padding: 3px 4px;
  display: inline-block;
+ position: absolute;
+ top: 4px;
+ left: 20px;
+ background: rgba(35, 35, 35, 0.75);
+}
+.imagethumb .icon-buttons .icon {
+  margin: 3px 1px 0;
+  padding: 1px 1px 0;
+  display: inline-block;
 }
