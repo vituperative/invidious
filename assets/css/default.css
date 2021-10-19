@@ -498,3 +498,7 @@ input[type="search"]:focus::placeholder {
   display: inline-block;
   text-align: center;
 }
+.imagethumb .tumbnail ~ p {
+  margin: 3px 0 0;
+  font-size: 90%;
+}
