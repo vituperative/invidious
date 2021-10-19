@@ -498,7 +498,7 @@ input[type="search"]:focus::placeholder {
   display: inline-block;
   text-align: center;
 }
-.imagethumb ~ p:not(.length) {
+.imagethumb div p:not(.length) {
   margin: 3px 0 0;
   font-size: 90%;
 }
