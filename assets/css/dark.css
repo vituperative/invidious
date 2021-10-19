@@ -505,6 +505,11 @@ input[type="search"]:focus::placeholder {
 #toggle_theme {
   display: none;
 }
+.vid_title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media screen and (min-width: 1200px) {
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
