@@ -12,7 +12,7 @@
         "": "`x` playlists"
     },
     "LIVE": "LIVE",
-    "Shared `x` ago": "Shared `x` ago",
+    "`x` ago": "`x` ago",
     "Unsubscribe": "Unsubscribe",
     "Subscribe": "Subscribe",
     "View channel on YouTube": "View channel on YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Engagement: ",
     "Whitelisted regions: ": "Whitelisted regions: ",
     "Blacklisted regions: ": "Blacklisted regions: ",
-    "Shared `x`": "Shared `x`",
+    "`x`": "`x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` view",
         "": "`x` views"

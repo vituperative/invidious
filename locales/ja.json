@@ -12,7 +12,7 @@
         "": "`x` 個の再生リスト"
     },
     "LIVE": "ライブ",
-    "Shared `x` ago": "`x`前に共有",
+    "`x` ago": "`x`前に共有",
     "Unsubscribe": "登録解除",
     "Subscribe": "登録",
     "View channel on YouTube": "YouTube でチャンネルを見る",
@@ -175,7 +175,7 @@
     "Engagement: ": "エンゲージメント: ",
     "Whitelisted regions: ": "ホワイトリストの地域: ",
     "Blacklisted regions: ": "ブラックリストの地域: ",
-    "Shared `x`": "`x`に共有",
+    "`x`": "`x`に共有",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` 回視聴",
         "": "`x` 回視聴"

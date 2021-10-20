@@ -12,7 +12,7 @@
         "": "`x` playliste"
     },
     "LIVE": "UŽIVO",
-    "Shared `x` ago": "Dijeljeno prije `x`",
+    "`x` ago": "Dijeljeno prije `x`",
     "Unsubscribe": "Odjavi pretplatu",
     "Subscribe": "Pretplati se",
     "View channel on YouTube": "Prikaži kanal na YouTubeu",
@@ -175,7 +175,7 @@
     "Engagement: ": "Sudjelovanje: ",
     "Whitelisted regions: ": "Odobrene regije: ",
     "Blacklisted regions: ": "Blokirane regije: ",
-    "Shared `x`": "Dijeljeno `x`",
+    "`x`": "Dijeljeno `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` gledanja.([^.,0-9]|^)1([^.,0-9]|$)",
         "": "`x` gledanja"

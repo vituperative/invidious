@@ -12,7 +12,7 @@
         "": "`x` afspilningslister"
     },
     "LIVE": "DIREKTE",
-    "Shared `x` ago": "Delt for `x` siden",
+    "`x` ago": "Delt for `x` siden",
     "Unsubscribe": "Opsig abonnement",
     "Subscribe": "Abonner",
     "View channel on YouTube": "Vis kanal på YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Engagement: ",
     "Whitelisted regions: ": "Whitelistede regioner: ",
     "Blacklisted regions: ": "Blacklistede regioner: ",
-    "Shared `x`": "Delt `x`",
+    "`x`": "Delt `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` visninger.([^.,0-9]|^)1([^.,0-9]|$)",
         "": "`x` visninger"

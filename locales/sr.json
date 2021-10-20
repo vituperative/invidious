@@ -12,7 +12,7 @@
         "": "`x` списака извођења"
     },
     "LIVE": "УЖИВО",
-    "Shared `x` ago": "Подељено пре `x`",
+    "`x` ago": "Подељено пре `x`",
     "Unsubscribe": "Прекини праћење",
     "Subscribe": "Прати",
     "View channel on YouTube": "Погледај канал на YouTube-у",
@@ -175,7 +175,7 @@
     "Engagement: ": "",
     "Whitelisted regions: ": "",
     "Blacklisted regions: ": "",
-    "Shared `x`": "",
+    "`x`": "",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "",
         "": ""

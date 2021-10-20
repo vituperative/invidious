@@ -12,7 +12,7 @@
         "": "`x` daftar putar"
     },
     "LIVE": "SIARAN LANGSUNG",
-    "Shared `x` ago": "Dibagikan`x` lalu",
+    "`x` ago": "Dibagikan`x` lalu",
     "Unsubscribe": "Batal Langganan",
     "Subscribe": "Langganan",
     "View channel on YouTube": "Lihat kanal di YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Keterlibatan: ",
     "Whitelisted regions: ": "Wilayah daftar-putih: ",
     "Blacklisted regions: ": "Wilayah daftar-hitam: ",
-    "Shared `x`": "Berbagi`x`",
+    "`x`": "Berbagi`x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` tampilan.([^.,0-9]|^)1([^.,0-9]|$)",
         "": "`x` tampilan"

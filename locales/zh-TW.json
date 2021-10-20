@@ -12,7 +12,7 @@
         "": "`x` 播放清單"
     },
     "LIVE": "直播",
-    "Shared `x` ago": "`x` 前分享",
+    "`x` ago": "`x` 前分享",
     "Unsubscribe": "取消訂閱",
     "Subscribe": "訂閱",
     "View channel on YouTube": "在 YouTube 上檢視頻道",
@@ -175,7 +175,7 @@
     "Engagement: ": "參與度： ",
     "Whitelisted regions: ": "白名單區域： ",
     "Blacklisted regions: ": "黑名單區域： ",
-    "Shared `x`": "`x` 發佈",
+    "`x`": "`x` 發佈",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` 次檢視",
         "": "`x` 次檢視"

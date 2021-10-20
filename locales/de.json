@@ -12,7 +12,7 @@
         "": "`x` Wiedergabelisten"
     },
     "LIVE": "LIVE",
-    "Shared `x` ago": "Vor `x` geteilt",
+    "`x` ago": "Vor `x` geteilt",
     "Unsubscribe": "Abo beenden",
     "Subscribe": "Abonnieren",
     "View channel on YouTube": "Kanal auf YouTube anzeigen",
@@ -175,7 +175,7 @@
     "Engagement: ": "Engagement: ",
     "Whitelisted regions: ": "Erlaubte Regionen: ",
     "Blacklisted regions: ": "Unerlaubte Regionen: ",
-    "Shared `x`": "Geteilt `x`",
+    "`x`": "Geteilt `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` Aufrufe",
         "": "`x` Aufrufe"

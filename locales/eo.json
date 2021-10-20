@@ -12,7 +12,7 @@
         "": "`x` ludlistoj"
     },
     "LIVE": "NUNA",
-    "Shared `x` ago": "Konigita antaŭ `x`",
+    "`x` ago": "Konigita antaŭ `x`",
     "Unsubscribe": "Malabonu",
     "Subscribe": "Abonu",
     "View channel on YouTube": "Vidu kanalon en JuTubo",
@@ -175,7 +175,7 @@
     "Engagement: ": "Intereso: ",
     "Whitelisted regions: ": "Regionoj listigitaj en blanka listo: ",
     "Blacklisted regions: ": "Regionoj listigitaj en nigra listo: ",
-    "Shared `x`": "Konigita `x`",
+    "`x`": "Konigita `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` spektaĵoj",
         "": "`x` spektaĵoj"

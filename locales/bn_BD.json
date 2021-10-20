@@ -12,7 +12,7 @@
         "": "`x` প্লেলিস্ট"
     },
     "LIVE": "লাইভ",
-    "Shared `x` ago": "`x` আগে শেয়ার করা হয়েছে",
+    "`x` ago": "`x` আগে শেয়ার করা হয়েছে",
     "Unsubscribe": "আনসাবস্ক্রাইব",
     "Subscribe": "সাবস্ক্রাইব",
     "View channel on YouTube": "ইউটিউবে চ্যানেল দেখুন",
@@ -175,7 +175,7 @@
     "Engagement: ": "",
     "Whitelisted regions: ": "",
     "Blacklisted regions: ": "",
-    "Shared `x`": "",
+    "`x`": "",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "",
         "": ""

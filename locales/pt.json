@@ -174,7 +174,7 @@
         "": "`x` visualizações",
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` visualizações"
     },
-    "Shared `x`": "Partilhado `x`",
+    "`x`": "Partilhado `x`",
     "Blacklisted regions: ": "Regiões bloqueadas: ",
     "Whitelisted regions: ": "Regiões permitidas: ",
     "Engagement: ": "Compromisso: ",
@@ -410,7 +410,7 @@
     "View channel on YouTube": "Ver canal no YouTube",
     "Subscribe": "Subscrever",
     "Unsubscribe": "Anular subscrição",
-    "Shared `x` ago": "Partilhado `x` atrás",
+    "`x` ago": "Partilhado `x` atrás",
     "LIVE": "Em direto",
     "`x` playlists": {
         "": "`x` listas de reprodução",

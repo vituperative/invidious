@@ -12,7 +12,7 @@
         "": ""
     },
     "LIVE": "TRỰC TIẾP",
-    "Shared `x` ago": "Đã chia sẻ` x` trước",
+    "`x` ago": "Đã chia sẻ` x` trước",
     "Unsubscribe": "Hủy đăng ký",
     "Subscribe": "Đăng ký",
     "View channel on YouTube": "Xem kênh trên YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Hôn ước: ",
     "Whitelisted regions: ": "Các vùng nằm trong danh sách trắng: ",
     "Blacklisted regions: ": "Khu vực nằm trong danh sách đen: ",
-    "Shared `x`": "Chia sẻ` x`",
+    "`x`": "Chia sẻ` x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "",
         "": ""

@@ -12,7 +12,7 @@
         "": "`x` grojaraščiai"
     },
     "LIVE": "LIVE",
-    "Shared `x` ago": "Pasidalino prieš `x`",
+    "`x` ago": "Pasidalino prieš `x`",
     "Unsubscribe": "Atšaukti prenumeratą",
     "Subscribe": "Prenumeruoti",
     "View channel on YouTube": "Peržiūrėti kanalą YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Įsitraukimas: ",
     "Whitelisted regions: ": "Prieinantys regionai: ",
     "Blacklisted regions: ": "Blokuojami regionai: ",
-    "Shared `x`": "Pasidalino `x`",
+    "`x`": "Pasidalino `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` peržiūrų",
         "": "`x` peržiūrų"

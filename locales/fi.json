@@ -12,7 +12,7 @@
         "": "`x` soittolistaa"
     },
     "LIVE": "SUORA",
-    "Shared `x` ago": "Jaettu `x` sitten",
+    "`x` ago": "Jaettu `x` sitten",
     "Unsubscribe": "Peruuta tilaus",
     "Subscribe": "Tilaa",
     "View channel on YouTube": "Näytä kanava YouTubessa",
@@ -175,7 +175,7 @@
     "Engagement: ": "Huomio: ",
     "Whitelisted regions: ": "Sallitut alueet: ",
     "Blacklisted regions: ": "Estetyt alueet: ",
-    "Shared `x`": "Jaettu `x`",
+    "`x`": "Jaettu `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` katselukerta",
         "": "`x` katselukertaa"

@@ -12,7 +12,7 @@
         "": "`x` listes de lecture"
     },
     "LIVE": "EN DIRECT",
-    "Shared `x` ago": "Ajoutée il y a `x`",
+    "`x` ago": "Ajoutée il y a `x`",
     "Unsubscribe": "Se désabonner",
     "Subscribe": "S'abonner",
     "View channel on YouTube": "Voir la chaîne sur YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Taux d'implication : ",
     "Whitelisted regions: ": "Régions sur liste blanche : ",
     "Blacklisted regions: ": "Régions sur liste noire : ",
-    "Shared `x`": "Ajoutée le `x`",
+    "`x`": "Ajoutée le `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` vues",
         "": "`x` vues"

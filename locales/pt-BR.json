@@ -12,7 +12,7 @@
         "": "`x` listas de reprodução"
     },
     "LIVE": "AO VIVO",
-    "Shared `x` ago": "Compartilhado `x` atrás",
+    "`x` ago": "Compartilhado `x` atrás",
     "Unsubscribe": "Cancelar inscrição",
     "Subscribe": "Inscrever-se",
     "View channel on YouTube": "Ver canal no YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Empenho: ",
     "Whitelisted regions: ": "Regiões permitidas: ",
     "Blacklisted regions: ": "Regiões bloqueadas: ",
-    "Shared `x`": "Compartilhado `x`",
+    "`x`": "Compartilhado `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` visualizações",
         "": "`x` visualizações"

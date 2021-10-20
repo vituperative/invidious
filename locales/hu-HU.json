@@ -12,7 +12,7 @@
         "": "`x` playlist"
     },
     "LIVE": "ÉLŐ",
-    "Shared `x` ago": "`x` óta megosztva",
+    "`x` ago": "`x` óta megosztva",
     "Unsubscribe": "Leiratkozás",
     "Subscribe": "Feliratkozás",
     "View channel on YouTube": "csatorna megtekintése a YouTube-on",
@@ -175,7 +175,7 @@
     "Engagement: ": "elkötelezettség: ",
     "Whitelisted regions: ": "Engedélyezett régiók: ",
     "Blacklisted regions: ": "Tiltott régiók: ",
-    "Shared `x`": "Megosztva `x`",
+    "`x`": "Megosztva `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "",
         "": "`x` megtekintés"

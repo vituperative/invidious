@@ -12,7 +12,7 @@
         "": "`x` 个播放列表"
     },
     "LIVE": "直播",
-    "Shared `x` ago": "`x` 前分享",
+    "`x` ago": "`x` 前分享",
     "Unsubscribe": "取消订阅",
     "Subscribe": "订阅",
     "View channel on YouTube": "在 YouTube 查看频道",
@@ -175,7 +175,7 @@
     "Engagement: ": "参与度: ",
     "Whitelisted regions: ": "白名单地区: ",
     "Blacklisted regions: ": "黑名单地区: ",
-    "Shared `x`": "`x`发布",
+    "`x`": "`x`发布",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` 播放",
         "": "`x` 次观看"

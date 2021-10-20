@@ -12,7 +12,7 @@
         "": "`x` spilunarlistar"
     },
     "LIVE": "BEINT",
-    "Shared `x` ago": "Deilt `x` síðan",
+    "`x` ago": "Deilt `x` síðan",
     "Unsubscribe": "Afskrá",
     "Subscribe": "Áskrifa",
     "View channel on YouTube": "Skoða rás á YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Þátttöku: ",
     "Whitelisted regions: ": "Svæði á hvítum lista: ",
     "Blacklisted regions: ": "Svæði á svörtum lista: ",
-    "Shared `x`": "Deilt `x`",
+    "`x`": "Deilt `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` áhorf",
         "": "`x` áhorf"

@@ -12,7 +12,7 @@
         "": ""
     },
     "LIVE": "NAŽIVO",
-    "Shared `x` ago": "",
+    "`x` ago": "",
     "Unsubscribe": "Zrušiť odber",
     "Subscribe": "Odoberať",
     "View channel on YouTube": "Zobraziť kanál na YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "",
     "Whitelisted regions: ": "",
     "Blacklisted regions: ": "",
-    "Shared `x`": "",
+    "`x`": "",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "",
         "": ""

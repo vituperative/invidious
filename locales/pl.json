@@ -12,7 +12,7 @@
         "": "`x` playlist"
     },
     "LIVE": "NA ŻYWO",
-    "Shared `x` ago": "Udostępniono `x` temu",
+    "`x` ago": "Udostępniono `x` temu",
     "Unsubscribe": "Odsubskrybuj",
     "Subscribe": "Subskrybuj",
     "View channel on YouTube": "Wyświetl kanał na YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Zaangażowanie: ",
     "Whitelisted regions: ": "Dostępny na obszarach: ",
     "Blacklisted regions: ": "Niedostępny na obszarach: ",
-    "Shared `x`": "Udostępniono `x`",
+    "`x`": "Udostępniono `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` wyświetleń",
         "": "`x` wyświetleń"

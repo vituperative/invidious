@@ -12,7 +12,7 @@
         "": "`x` liste de redare"
     },
     "LIVE": "ÎN DIRECT",
-    "Shared `x` ago": "Adăugat acum `x`",
+    "`x` ago": "Adăugat acum `x`",
     "Unsubscribe": "Dezabonați-vă",
     "Subscribe": "Abonați-vă",
     "View channel on YouTube": "Vedeți canalul pe YouTube",
@@ -175,7 +175,7 @@
     "Engagement: ": "Procentul celor care au apăsat pe \"Îmi place\" sau \"Nu îmi place\" : ",
     "Whitelisted regions: ": "Regiunile de pe lista albă: ",
     "Blacklisted regions: ": "Regiunile de pe lista neagră: ",
-    "Shared `x`": "Publicat pe `x`",
+    "`x`": "Publicat pe `x`",
     "`x` views": {
         "([^.,0-9]|^)1([^.,0-9]|$)": "`x` vizionări",
         "": "`x` vizionări"
