@@ -530,8 +530,8 @@ input[type="search"]:focus::placeholder {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.pagenav {
-  margin-bottom: 32px;
+.pure-g.h-box.pagenav {
+  margin: -12px -9px 14px;
 }
 @media screen and (min-width: 1200px) {
   .pure-u-md-1-4,
