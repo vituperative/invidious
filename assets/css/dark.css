@@ -533,6 +533,9 @@ input[type="search"]:focus::placeholder {
 .pure-g.h-box.pagenav {
   margin: -12px -9px 14px;
 }
+#filters + hr + .pagenav {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
