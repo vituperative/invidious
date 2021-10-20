@@ -415,8 +415,23 @@ p,
   unicode-bidi: plaintext;
   text-align: start;
 }
+#descriptionWrapper, .channel-profile span {
+  position: relative;
+  z-index: -2;
+  background: #353333;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.4);
+}
+.channel-profile span {
+  margin-left: -52px;
+  padding: 4px 20px 4px 50px;
+  z-index: -1;
+  border-radius: 0 20px 20px 0;
+}
 #descriptionWrapper {
-  max-width: 600px;
+  margin-top: -12px;
+  padding: 24px 26px 4px;
 }
 #logo > h1 {
   text-align: center;
