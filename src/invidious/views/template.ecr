@@ -120,7 +120,7 @@
             <% end %>
 
             <%= content %>
-
+<!--
             <footer>
                 <div class="pure-g">
                     <div class="pure-u-1 pure-u-md-1-3">
@@ -162,12 +162,14 @@
                     </div>
                 </div>
             </footer>
-
+-->
         </div>
         <div class="pure-u-1 pure-u-md-2-24"></div>
     </div>
     <script src="/js/handlers.js?v=<%= ASSET_COMMIT %>"></script>
+<!--
     <script src="/js/themes.js?v=<%= ASSET_COMMIT %>"></script>
+-->
     <% if env.get? "user" %>
         <script src="/js/sse.js?v=<%= ASSET_COMMIT %>"></script>
         <script id="notification_data" type="application/json">
