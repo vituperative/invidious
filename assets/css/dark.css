@@ -457,7 +457,7 @@ footer {
 @media screen and (max-width: 1000px) {
   #logo h1.pure-menu-heading::after {
     margin: -30px 0;
-    background-size: auto 60%;
+    background-size: auto 52%;
   }
 }
 a,
