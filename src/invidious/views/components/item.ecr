@@ -101,7 +101,7 @@
                     <% if item.responds_to?(:premiere_timestamp) && item.premiere_timestamp.try &.> Time.utc %>
                         <p dir="auto"><%= translate(locale, "Premieres in `x`", recode_date((item.premiere_timestamp.as(Time) - Time.utc).ago, locale)) %></p>
                     <% elsif Time.utc - item.published > 1.minute %>
-                        <p dir="auto"><%= translate(locale, "Shared `x` ago", recode_date(item.published, locale)) %></p>
+                        <p dir="auto"><%= translate(locale, "`x` ago", recode_date(item.published, locale)) %></p>
                     <% end %>
                 </div>
 
@@ -179,7 +179,7 @@
                     <% if item.responds_to?(:premiere_timestamp) && item.premiere_timestamp.try &.> Time.utc %>
                         <p class="video-data" dir="auto"><%= translate(locale, "Premieres in `x`", recode_date((item.premiere_timestamp.as(Time) - Time.utc).ago, locale)) %></p>
                     <% elsif Time.utc - item.published > 1.minute %>
-                        <p class="video-data" dir="auto"><%= translate(locale, "Shared `x` ago", recode_date(item.published, locale)) %></p>
+                        <p class="video-data" dir="auto"><%= translate(locale, "`x` ago", recode_date(item.published, locale)) %></p>
                     <% end %>
                 </div>
 
