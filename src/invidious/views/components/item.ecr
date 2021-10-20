@@ -165,6 +165,7 @@
             <div class="video-card-row flexible">
                 <div class="flex-left yt_author"><a href="/channel/<%= item.ucid %>">
                     <p class="channel-name" dir="auto">
+<!--
                         <span class="author-thumb">
                             <% if !item.author_thumbnail.empty? %>
                                 <img width=18 src="/ggpht<%= URI.parse(item.author_thumbnail).request_target %>">
@@ -173,6 +174,7 @@
                             <% end %>
                             <%= HTML.escape(item.author) %>
                         </span>
+-->
                         <%= HTML.escape(item.author) %>
                     </p>
                 </a></div>
