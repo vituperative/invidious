@@ -35,7 +35,7 @@ h5,
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.4);
 }
-body a.channel-owner {
+body a.channel-owner {d
   padding: 1px 6px;
   color: #fff;
   border-radius: 9px;
@@ -432,6 +432,10 @@ p,
 #descriptionWrapper {
   margin-top: -12px;
   padding: 24px 26px 4px;
+}
+#description-box #descriptionWrapper {
+  margin-top: 0;
+  padding: 12px 20px;
 }
 #logo > h1 {
   text-align: center;
