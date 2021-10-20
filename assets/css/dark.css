@@ -526,7 +526,7 @@ input[type="search"]:focus::placeholder {
   .flex-left.yt_uploaded {
     position: absolute;
     right: 15px;
-    bottom: 16px;
+    bottom: 15px;
   }
   .flex-right.yt_views {
     padding: 2px 8px 16px;
