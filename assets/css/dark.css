@@ -555,7 +555,7 @@ input[type="search"]:focus::placeholder {
   .yt_channel {
     margin-top: 2px;
   }
-  .imagethumb .yt_channel p.channel-name {
+  .imagethumb .yt_author p.channel-name {
     padding-left: 15px;
     background: url(/author.svg) no-repeat left center / 12px;
   }
