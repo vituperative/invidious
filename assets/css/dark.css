@@ -551,4 +551,15 @@ input[type="search"]:focus::placeholder {
     margin-bottom: -6px;
     border-top: none;
   }
+  .yt_channel {
+    margin-top: 2px;
+  }
+  .yt_channel p {
+    padding-left: 15px;
+    background: url(author.svg) no-repeat left center / 12px;
+  }
+  .yt_uploaded p {
+    padding-left: 16px;
+    background: url(clock.svg) no-repeat left center / 12px;
+  }
 }
