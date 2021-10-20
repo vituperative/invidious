@@ -7,11 +7,11 @@ module Invidious::Routes::Search
 
     XML.build(indent: "  ", encoding: "UTF-8") do |xml|
       xml.element("OpenSearchDescription", xmlns: "http://a9.com/-/spec/opensearch/1.1/") do
-        xml.element("ShortName") { xml.text "Invidious" }
-        xml.element("LongName") { xml.text "Invidious Search" }
-        xml.element("Description") { xml.text "Search for videos, channels, and playlists on Invidious" }
+        xml.element("ShortName") { xml.text "IncogTube" }
+        xml.element("LongName") { xml.text "IncogTube Search" }
+        xml.element("Description") { xml.text "Search for videos, channels, and playlists on IncogTube" }
         xml.element("InputEncoding") { xml.text "UTF-8" }
-        xml.element("Image", width: 48, height: 48, type: "image/x-icon") { xml.text "#{HOST_URL}/favicon.ico" }
+        xml.element("Image", width: 48, height: 48, type: "image/x-icon") { xml.text "#{HOST_URL}/favicon.svg" }
         xml.element("Url", type: "text/html", method: "get", template: "#{HOST_URL}/search?q={searchTerms}")
       end
     end
