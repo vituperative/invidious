@@ -31,7 +31,7 @@ h5,
 .channel-profile > img {
   margin: 0 7px 0 0;
   width: 48px;
-  height: auto;
+  height: 48px;
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.4);
 }
