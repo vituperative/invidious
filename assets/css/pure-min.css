@@ -386,7 +386,19 @@ th {
 .pure-u-1-1,
 .pure-u-24-24,
 .pure-u-5-5 {
+  margin: 4px 0 10px;
+  width: 50%;
+}
+#logo.pure-u-1 {
   width: 100%;
+}
+.pure-u-1.pure-u-md-2-24 {
+  width: 0;
+}
+#contents.pure-u-1.pure-u-md-20-24,
+.pure-u-1.pure-u-md-4-24,
+.pure-u-1.pure-u-md-12-24.searchbar {
+  width: 100% !important;
 }
 .pure-button {
   display: inline-block;
