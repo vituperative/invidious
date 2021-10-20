@@ -524,7 +524,8 @@ input[type="search"]:focus::placeholder {
 #toggle_theme {
   display: none;
 }
-.vid_title {
+.imagethumb .vid_title {
+  margin-bottom: -9px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
