@@ -398,7 +398,7 @@ th {
 #contents.pure-u-1.pure-u-md-20-24,
 .pure-u-1.pure-u-md-4-24,
 .pure-u-1.pure-u-md-12-24.searchbar {
-  width: 100% !important;
+  width: 100%;
 }
 .pure-button {
   display: inline-block;
