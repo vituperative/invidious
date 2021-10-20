@@ -499,9 +499,10 @@ input[type="search"]:focus::placeholder {
   font-size: 90%;
 }
 .imagethumb p:not(.length)[dir="auto"] {
-  margin: 3px 0 -10px;
+  margin: 5px 0 -10px;
   line-height: 1.25;
   font-size: 85%;
+  font-weight: 600;
 }
 .imagethumb .icon-buttons {
   padding: 3px 4px;
@@ -554,11 +555,11 @@ input[type="search"]:focus::placeholder {
   .yt_channel {
     margin-top: 2px;
   }
-  .yt_channel p.channel-name[dir="auto"] {
-    padding-left: 15px !important;
-    background: url(/author.svg) no-repeat left center / 12px !important;
+  .imagethumb .yt_channel p.channel-name {
+    padding-left: 15px;
+    background: url(/author.svg) no-repeat left center / 12px;
   }
-  .yt_uploaded p {
+  .imagethumb .yt_uploaded p {
     padding-left: 16px;
     background: url(/clock.svg) no-repeat left center / 12px;
   }
