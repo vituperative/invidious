@@ -29,19 +29,22 @@ h5,
   vertical-align: middle;
 }
 .channel-profile > img {
+  margin: 0 7px 0 0;
   width: 48px;
   height: auto;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.4);
 }
 body a.channel-owner {
-  background-color: #008bec;
+  padding: 1px 6px;
   color: #fff;
   border-radius: 9px;
-  padding: 1px 6px;
+  background-color: #008bec;
 }
 .creator-heart-container {
-  display: inline-block;
-  padding: 0 7px 6px 0;
   margin: 0 -7px -4px 0;
+  padding: 0 7px 6px 0;
+  display: inline-block;
 }
 .creator-heart {
   position: relative;
