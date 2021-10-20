@@ -167,11 +167,11 @@
                     <p class="channel-name" dir="auto">
 <!--
                         <span class="author-thumb">
-                            <% if !item.author_thumbnail.empty? %>
+                            <% //if !item.author_thumbnail.empty? %>
                                 <img width=18 src="/ggpht<%= URI.parse(item.author_thumbnail).request_target %>">
-                            <% else %>
+                            <% // else %>
                                 <img width=18 src="author.svg">
-                            <% end %>
+                            <% // end %>
                             <%= HTML.escape(item.author) %>
                         </span>
 -->
