@@ -205,6 +205,7 @@ input[type="search"]::-webkit-search-cancel-button {
   border-bottom: 2px solid #aaa;
 }
 .user-field {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -621,6 +622,14 @@ input[type="search"]:focus::placeholder {
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logo h1.pure-menu-heading::after {
+    background-size: 90%;
+  }
+  .h-box h3 {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
