@@ -391,6 +391,7 @@ hr {
   margin: 0 20px -8px 0;
   display: inline-block;
   font-size: 130%;
+  cursor: pointer;
 }
 /*
 #filters > summary::before {
