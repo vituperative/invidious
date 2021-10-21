@@ -386,6 +386,7 @@ hr {
   margin-bottom: 15px;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 #filters > summary .toggle {
   margin: 0 20px -8px 0;
