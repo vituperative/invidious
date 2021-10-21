@@ -403,13 +403,14 @@ details#filters {
   padding: 12px 0 0;
   position: relative;
   text-align: right;
+  border-radius: 8px;
 }
 summary + #filters {
   padding: 20px;
   border-radius: 0 0 8px 8px;
   background: #151313;
   position: absolute;
-  top: 36px;
+  top: 35px;
   left: -5px;
   right: -5px;
   z-index: 9999;
