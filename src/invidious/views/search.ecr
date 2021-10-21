@@ -6,15 +6,13 @@
 
 <!-- Search redirection and filtering UI -->
 <% if count == 0 %>
-    <h3 style="text-align: center">
-        <a href="/redirect?referer=<%= env.get?("current_page") %>"><%= translate(locale, "Broken? Try another Invidious Instance!") %></a>
-    </h3>
+    <h3 style="text-align: center"><%= translate(locale, "No results") %></h3>
 <% else %>
     <details id="filters">
         <summary>
-            <h3 style="display:inline"> <%= translate(locale, "filter") %> </h3>
+            <span class=toggle title="<%= translate(locale, "filter") %>"><i class="icon ion-ios-funnel"></i></span>
         </summary>
-        <div id="filters" class="pure-g h-box">
+        <div id="filters" class="pure-g h-box filters">
             <div class="pure-u-1-3 pure-u-md-1-5">
                 <b><%= translate(locale, "date") %></b>
                 <hr/>
