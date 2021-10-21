@@ -381,12 +381,11 @@ body.no-theme {
   display: block;
   position: relative;
 }
-
 #filters > summary .toggle {
-  margin-right: 20px;
+  margin: 0 20px -8px 0;
+  display: inline-block;
   font-size: 130%;
 }
-
 /*
 #filters > summary::before {
   content: "[ + ]";
@@ -401,7 +400,7 @@ details#filters {
   display: inline;
   margin: 15px 5px 10px;
   background: rgba(0,0,0,.3);
-  padding: 10px 0;
+  padding: 12px 0 0;
   position: relative;
   text-align: right;
 }
