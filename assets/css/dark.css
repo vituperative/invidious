@@ -601,6 +601,23 @@ input[type="search"]:focus::placeholder {
 .subscribers + p {
   margin-top: -10px;
 }
+
+.index-link.pure-menu-heading {
+  width: 200px;
+  height: 48px;
+  display: inline-block;
+  background: url(/logo_sm.svg) no-repeat center center / 200px;
+  color: transparent;
+  opacity: .7;
+}
+.index-link.pure-menu-heading:hover,
+.index-link.pure-menu-heading:focus {
+  opacity: 1;
+  color: transparent;
+}
+.index-link.pure-menu-heading:active {
+  transform: scale(.9);
+}
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
