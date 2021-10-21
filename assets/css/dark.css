@@ -579,11 +579,11 @@ input[type="search"]:focus::placeholder {
 .authorthumb img {
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.4);
-  width: 128px;
-  height: 128px;
+  width: 68px !important;
+  height: 68px !important;
 }
 .channel_desc {
-  margin-top: -20px;
+  margin-top: -30px;
   padding-top: 20px;
   width: 100%;
   display: inline-block;
