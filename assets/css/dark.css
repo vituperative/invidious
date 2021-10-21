@@ -137,6 +137,9 @@ img.thumbnail:hover {
   filter: saturate(1);
   transition: ease filter .15s;
 }
+.thumbnail:active {
+  transform: scale(.99);
+}
 .length {
   padding: 2px 8px;
   position: absolute;
