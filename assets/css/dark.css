@@ -589,7 +589,10 @@ input[type="search"]:focus::placeholder {
 .imagethumb .icon-buttons .icon:hover {
   transform: scale(1.2);
 }
-
+.imagethumb .authorthumb + p.channelname {
+  font-size: 120% !important;
+  font-weight: 900 !important;
+}
 #hosting a {
   font-weight: 700;
 }
