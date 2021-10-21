@@ -77,14 +77,10 @@
 
             <div class="video-card-row flexible">
                 <div class="flex-left yt_author">
-                <% if item.ucid %>
-                    <a href="/channel/<%= item.ucid %>">
-                        <p class="channel-name" dir="auto"><%= HTML.escape(item.author) %></p>
-                    </a>
+                <% if item.author %>
+                    <a href="/channel/<%= item.ucid %>"><p class="channel-name" dir="auto"><%= HTML.escape(item.author) %></p></a>
                 <% else %>
-                    <a href="#">
-                        <p class="channel-name" dir="auto">No User Id</p>
-                    </a>
+                    <a class="no-id" href="#"><p class="channel-name" dir="auto">No User Id</p></a>
                 <% end %>
                 </div>
                 <div class="flex-right yt_buttons">
@@ -163,15 +159,11 @@
 
             <div class="video-card-row flexible">
                 <div class="flex-left yt_author">
-                <% if item.ucid %>
-                    <a href="/channel/<%= item.ucid %>">
-                        <p class="channel-name" dir="auto"><%= HTML.escape(item.author) %></p>
-                    </a>
-                <% else %>
-                    <a href="#">
-                        <p class="channel-name" dir="auto">No User Id</p>
-                    </a>
-                <% end %>
+                    <% if item.author %>
+                    <a href="/channel/<%= item.ucid %>"><p class="channel-name" dir="auto"><%= HTML.escape(item.author) %></p></a>
+                    <% else %>
+                    <a class="no-id" href="#"><p class="channel-name" dir="auto">No User Id</p></a>
+                    <% end %>
                 </div>
                 <div class="flex-right yt_buttons">
                     <div class="icon-buttons">
