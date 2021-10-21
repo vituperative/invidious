@@ -569,6 +569,41 @@ input[type="search"]:focus::placeholder {
   height: 15px;
   background: none;
 }
+.authorthumb {
+  margin: -4px -40px 0 2px;
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  float: left;
+}
+.authorthumb img {
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.4);
+}
+.channel_desc {
+  margin-top: -20px;
+  padding-top: 20px;
+  width: 100%;
+  display: inline-block;
+  clear: both;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.subscribers, .subscribers + p {
+    line-height: 1;
+    margin: 15px 0 0;
+    padding-bottom: 0;
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+.subscribers + p {
+  margin-top: -10px;
+}
+@media screen and (max-width: 1000px) {
+  .subscribers, .subscribers + p {
+    font-size: 90%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
