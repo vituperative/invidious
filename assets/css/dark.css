@@ -457,9 +457,35 @@ summary + #filters hr {
   overflow: unset;
   height: 100%;
 }
+
 #descexpansionbutton ~ label {
   order: 1;
   margin-top: 20px;
+}
+#description-box {
+  position: relative;
+}
+#showmore {
+  position: absolute;
+  bottom: 1px;
+  left: 2px;
+  right: 2px;
+  width: calc(100% - 4px);
+  background: #f00;
+  height: 40px;
+  text-align: center;
+  font-size: 20pt;
+  vertical-align: middle;
+  line-height: 40px;
+  border-radius: 0 0 2px 2px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #353333 65%);
+  cursor: pointer;
+}
+#descexpansionbutton:checked ~ #showmore {
+  background: transparent;
+}
+#showmore a:not(:hover):not(:focus):not(:active) {
+  color: #fff;
 }
 h1,
 h2,

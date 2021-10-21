@@ -1,8 +1,6 @@
 <% ucid = video.ucid %>
 <% title = HTML.escape(video.title) %>
 <% author = HTML.escape(video.author) %>
-
-
 <% content_for "header" do %>
 <meta name="thumbnail" content="<%= thumbnail %>">
 <meta name="description" content="<%= HTML.escape(video.short_description) %>">
@@ -11,40 +9,15 @@
 <meta property="og:url" content="<%= HOST_URL %>/watch?v=<%= video.id %>">
 <meta property="og:title" content="<%= title %>">
 <meta property="og:image" content="/vi/<%= video.id %>/maxres.jpg">
-<meta property="og:description" content="<%= video.short_description %>">
 <meta property="og:type" content="video.other">
 <meta property="og:video:url" content="<%= HOST_URL %>/embed/<%= video.id %>">
 <meta property="og:video:secure_url" content="<%= HOST_URL %>/embed/<%= video.id %>">
 <meta property="og:video:type" content="text/html">
 <meta property="og:video:width" content="1280">
 <meta property="og:video:height" content="720">
-<meta name="twitter:card" content="player">
-<meta name="twitter:site" content="@omarroth1">
-<meta name="twitter:url" content="<%= HOST_URL %>/watch?v=<%= video.id %>">
-<meta name="twitter:title" content="<%= title %>">
-<meta name="twitter:description" content="<%= video.short_description %>">
-<meta name="twitter:image" content="<%= HOST_URL %>/vi/<%= video.id %>/maxres.jpg">
-<meta name="twitter:player" content="<%= HOST_URL %>/embed/<%= video.id %>">
-<meta name="twitter:player:width" content="1280">
-<meta name="twitter:player:height" content="720">
 <link rel="alternate" href="https://www.youtube.com/watch?v=<%= video.id %>">
 <%= rendered "components/player_sources" %>
 <title><%= title %> - IncogTube</title>
-
-<!-- Description expansion also updates the 'Show more' button to 'Show less' so
-we're going to need to do it here in order to allow for translations.
- -->
-<!--
-<style>
-#descexpansionbutton ~ label > a::after {
-    content: "<%= translate(locale, "Show more") %>"
-}
-
-#descexpansionbutton:checked ~ label > a::after {
-    content: "<%= translate(locale, "Show less") %>"
-}
-</style>
--->
 <% end %>
 
 <script id="video_data" type="application/json">
@@ -259,11 +232,9 @@ we're going to need to do it here in order to allow for translations.
                     </div>
                 <% else %>
                     <input id="descexpansionbutton" type="checkbox"/>
+                    <label id="showmore" for="descexpansionbutton"><a>...</a></label>
                     <div id="descriptionWrapper">
                         <%= video.description_html %>
-                        <label id="showmore" for="descexpansionbutton">
-                            <a>...</a>
-                        </label>
                     </div>
                 <% end %>
             </div>
