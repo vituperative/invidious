@@ -579,6 +579,8 @@ input[type="search"]:focus::placeholder {
 .authorthumb img {
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.4);
+  width: 128px;
+  height: 128px;
 }
 .channel_desc {
   margin-top: -20px;
