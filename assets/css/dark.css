@@ -371,15 +371,23 @@ body.no-theme {
 }
 #filters {
   display: inline;
-  margin-top: 15px;
+  margin: 15px 5px 10px;
 }
 #filters > div {
   display: inline-block;
 }
 #filters > summary {
-  display: block;
   margin-bottom: 15px;
+  display: block;
+  position: relative;
 }
+
+#filters > summary .toggle {
+  margin-right: 20px;
+  font-size: 130%;
+}
+
+/*
 #filters > summary::before {
   content: "[ + ]";
   font-size: 1.5em;
@@ -387,6 +395,27 @@ body.no-theme {
 #filters[open] > summary::before {
   content: "[ - ]";
   font-size: 1.5em;
+}
+*/
+details#filters {
+  display: inline;
+  margin: 15px 5px 10px;
+  background: rgba(0,0,0,.3);
+  padding: 10px 0;
+  position: relative;
+  text-align: right;
+}
+summary + #filters {
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  background: #151313;
+  position: absolute;
+  top: 36px;
+  left: -5px;
+  right: -5px;
+  z-index: 9999;
+  line-height: 1;
+  font-size: 90%;
 }
 hr {
   margin: 10px 0;
