@@ -34,6 +34,7 @@
 <!-- Description expansion also updates the 'Show more' button to 'Show less' so
 we're going to need to do it here in order to allow for translations.
  -->
+<!--
 <style>
 #descexpansionbutton ~ label > a::after {
     content: "<%= translate(locale, "Show more") %>"
@@ -43,6 +44,7 @@ we're going to need to do it here in order to allow for translations.
     content: "<%= translate(locale, "Show less") %>"
 }
 </style>
+-->
 <% end %>
 
 <script id="video_data" type="application/json">
@@ -259,10 +261,10 @@ we're going to need to do it here in order to allow for translations.
                     <input id="descexpansionbutton" type="checkbox"/>
                     <div id="descriptionWrapper">
                         <%= video.description_html %>
+                        <label id="showmore" for="descexpansionbutton">
+                            <a>...</a>
+                        </label>
                     </div>
-                    <label for="descexpansionbutton">
-                        <a></a>
-                    </label>
                 <% end %>
             </div>
 
@@ -274,7 +276,7 @@ we're going to need to do it here in order to allow for translations.
                 <% else %>
                     <noscript>
                         <a href="/watch?<%= env.params.query %>&nojs=1">
-                            <%= translate(locale, "Hi! Looks like you have JavaScript turned off. Click here to view comments, keep in mind they may take a bit longer to load.") %>
+                            <%= translate(locale, "View comments") %>
                         </a>
                     </noscript>
                 <% end %>
