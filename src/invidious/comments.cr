@@ -332,10 +332,7 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
           <img loading="lazy" style="margin-right:1em;margin-top:1em;width:90%" src="#{author_thumbnail}">
         </div>
         <div class="pure-u-20-24 pure-u-md-22-24">
-          <p>
-            <b>
-              <a class="#{child["authorIsChannelOwner"] == true ? "channel-owner" : ""}" href="#{child["authorUrl"]}">#{author_name}</a>
-            </b>
+          <p><b><a class="#{child["authorIsChannelOwner"] == true ? "channel-owner" : ""}" href="#{child["authorUrl"]}">#{author_name}</a></b></p>
             <p style="white-space:pre-wrap">#{child["contentHtml"]}</p>
       END_HTML
 
