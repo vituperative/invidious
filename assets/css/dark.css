@@ -723,6 +723,18 @@ input[type="search"]:focus::placeholder {
   width: calc(100% + 128px) !important;
   border-radius: 0 0 8px 8px;
 }
+input, input[type=checkbox], input[type=radio] {
+  accent-color: #c19f9f;
+}
+input[type=checkbox], input[type=radio] {
+  width: 22px;
+  height: 22px;
+}
+input:hover, input:focus,
+input[type=checkbox]:hover, input[type=radio]:hover,
+input[type=checkbox]:focus, input[type=radio]:focus {
+  accent-color: #ca7740;
+}
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
