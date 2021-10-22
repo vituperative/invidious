@@ -48,7 +48,6 @@
 {
     "aspect_ratio" => aspect_ratio,
     "title" => video.title,
-    "description" => HTML.escape(video.short_description),
     "thumbnail" => thumbnail,
     "preferred_caption_found" => !preferred_captions.empty?
 }.to_pretty_json
