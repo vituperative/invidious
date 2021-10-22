@@ -72,7 +72,7 @@ struct ChannelVideo
       xml.element("content", type: "xhtml") do
         xml.element("div", xmlns: "http://www.w3.org/1999/xhtml") do
           xml.element("a", href: "#{HOST_URL}/watch?#{query_params}") do
-            xml.element("img", src: "#{HOST_URL}/vi/#{self.id}/mqdefault.jpg")
+            xml.element("img", src: "#{HOST_URL}/vi_webp/#{self.id}/mqdefault.webp")
           end
         end
       end
@@ -82,7 +82,7 @@ struct ChannelVideo
 
       xml.element("media:group") do
         xml.element("media:title") { xml.text self.title }
-        xml.element("media:thumbnail", url: "#{HOST_URL}/vi/#{self.id}/mqdefault.jpg",
+        xml.element("media:thumbnail", url: "#{HOST_URL}/vi_webp/#{self.id}/mqdefault.webp",
           width: "320", height: "180")
       end
     end
