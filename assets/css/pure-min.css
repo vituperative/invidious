@@ -517,6 +517,7 @@ a.pure-button-selected {
   border-bottom-right-radius: 2px;
   border-right: none;
 }
+/*
 .pure-form input[type="color"],
 .pure-form input[type="date"],
 .pure-form input[type="datetime-local"],
@@ -641,6 +642,7 @@ a.pure-button-selected {
 .pure-form select[multiple] {
   height: auto;
 }
+*/
 .pure-form label {
   margin: 0.5em 0 0.2em;
 }
