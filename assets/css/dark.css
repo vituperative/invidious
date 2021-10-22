@@ -729,6 +729,7 @@ input, input[type=checkbox], input[type=radio] {
 input[type=checkbox], input[type=radio] {
   width: 22px;
   height: 22px;
+  cursor: pointer;
 }
 input:hover, input:focus,
 input[type=checkbox]:hover, input[type=radio]:hover,
