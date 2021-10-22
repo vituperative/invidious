@@ -153,13 +153,13 @@ module Invidious::Routes::Images
 
     if name == "maxres.jpg"
       build_thumbnails(id).each do |thumb|
-        if YT_POOL.client &.head("/vi/#{id}/#{thumb[:url]}.jpg", headers).status_code == 200
-          name = thumb[:url] + ".jpg"
+        if YT_POOL.client &.head("/vi_webp/#{id}/#{thumb[:url]}.webp", headers).status_code == 200
+          name = thumb[:url] + ".webp"
           break
         end
       end
     end
-    url = "/vi/#{id}/#{name}"
+    url = "/vi_webp/#{id}/#{name}"
 
     REQUEST_HEADERS_WHITELIST.each do |header|
       if env.request.headers[header]?

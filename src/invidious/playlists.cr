@@ -32,7 +32,7 @@ struct PlaylistVideo
       xml.element("content", type: "xhtml") do
         xml.element("div", xmlns: "http://www.w3.org/1999/xhtml") do
           xml.element("a", href: "#{HOST_URL}/watch?v=#{self.id}") do
-            xml.element("img", src: "#{HOST_URL}/vi/#{self.id}/mqdefault.jpg")
+            xml.element("img", src: "#{HOST_URL}/vi_webp/#{self.id}/mqdefault.webp")
           end
         end
       end
@@ -41,7 +41,7 @@ struct PlaylistVideo
 
       xml.element("media:group") do
         xml.element("media:title") { xml.text self.title }
-        xml.element("media:thumbnail", url: "#{HOST_URL}/vi/#{self.id}/mqdefault.jpg",
+        xml.element("media:thumbnail", url: "#{HOST_URL}/vi_webp/#{self.id}/mqdefault.webp",
           width: "320", height: "180")
       end
     end
@@ -243,7 +243,7 @@ struct InvidiousPlaylist
 
   def thumbnail
     @thumbnail_id ||= PG_DB.query_one?("SELECT id FROM playlist_videos WHERE plid = $1 ORDER BY array_position($2, index) LIMIT 1", self.id, self.index, as: String) || "-----------"
-    "/vi/#{@thumbnail_id}/mqdefault.jpg"
+    "/vi_webp/#{@thumbnail_id}/mqdefault.webp"
   end
 
   def author_thumbnail
@@ -535,7 +535,7 @@ def template_playlist(playlist)
       <li class="pure-menu-item" id="#{video["videoId"]}">
         <a href="/watch?v=#{video["videoId"]}&list=#{playlist["playlistId"]}&index=#{video["index"]}">
           <div class="thumbnail">
-              <img loading="lazy" class="thumbnail" src="/vi/#{video["videoId"]}/mqdefault.jpg">
+              <img loading="lazy" class="thumbnail" src="/vi_webp/#{video["videoId"]}/mqdefault.webp">
               <p class="length">#{recode_length_seconds(video["lengthSeconds"].as_i)}</p>
           </div>
           <p style="width:100%">#{video["title"]}</p>
