@@ -327,6 +327,7 @@ body {
 .pure-menu-heading {
   color: #f0f0f0;
 }
+/*
 input,
 select,
 textarea {
@@ -335,6 +336,7 @@ textarea {
 .pure-form input[type="file"] {
   color: #f0f0f0;
 }
+*/
 .searchbar input {
   background-color: inherit;
   color: inherit;
