@@ -35,6 +35,8 @@ class Kemal::RouteHandler
 
     if context.request.method == "HEAD" && context.request.path.ends_with? ".jpg"
       context.response.headers["Content-Type"] = "image/jpeg"
+    if context.request.method == "HEAD" && context.request.path.ends_with? ".webp"
+      context.response.headers["Content-Type"] = "image/webp"
     end
 
     context.response.print(content)
