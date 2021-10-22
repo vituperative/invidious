@@ -3,7 +3,6 @@
 <% author = HTML.escape(video.author) %>
 <% content_for "header" do %>
 <meta name="thumbnail" content="<%= thumbnail %>">
-<meta name="description" content="<%= HTML.escape(video.short_description) %>">
 <meta name="keywords" content="<%= video.keywords.join(",") %>">
 <meta property="og:site_name" content="IncogTube">
 <meta property="og:url" content="<%= HOST_URL %>/watch?v=<%= video.id %>">
