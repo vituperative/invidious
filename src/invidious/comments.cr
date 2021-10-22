@@ -410,7 +410,7 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
         html << <<-END_HTML
           <span class="creator-heart-container" title="#{translate(locale, "`x` marked it with a ❤", child["creatorHeart"]["creatorName"].as_s)}">
               <div class="creator-heart">
-                  <img loading="lazy" class="creator-heart-background-hearted" src="#{creator_thumbnail}"></img>
+                  <img loading="lazy" class="creator-heart-background-hearted" src="#{creator_thumbnail}">
                   <div class="creator-heart-small-hearted">
                       <div class="icon ion-ios-heart creator-heart-small-container"></div>
                   </div>
