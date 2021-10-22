@@ -706,7 +706,7 @@ input[type="search"]:focus::placeholder {
   border-radius: 8px;
   background: rgba(255,255,255,.1);
 }
-#comments .commentauthor {
+#comments .channel-profile > img {
   margin: 11px 0 0 -32px !important;
   width: 32px !important;
   height: 32px !important;
