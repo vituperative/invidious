@@ -228,8 +228,8 @@ before_all do |env|
 
   next if {
             "/sb/",
-            "/vi/",
             "/vi_webp/",
+            "/vi/",
             "/s_p/",
             "/yts/",
             "/ggpht/",
