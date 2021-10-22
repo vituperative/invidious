@@ -229,6 +229,7 @@ before_all do |env|
   next if {
             "/sb/",
             "/vi/",
+            "/vi_webp/",
             "/s_p/",
             "/yts/",
             "/ggpht/",
@@ -396,7 +397,7 @@ Invidious::Routing.options "/sb/:authority/:id/:storyboard/:index", Invidious::R
 Invidious::Routing.get "/sb/:authority/:id/:storyboard/:index", Invidious::Routes::Images, :get_storyboard
 Invidious::Routing.get "/s_p/:id/:name", Invidious::Routes::Images, :s_p_image
 Invidious::Routing.get "/yts/img/:name", Invidious::Routes::Images, :yts_image
-Invidious::Routing.get "/vi/:id/:name", Invidious::Routes::Images, :thumbnails
+Invidious::Routing.get "/vi_webp/:id/:name", Invidious::Routes::Images, :thumbnails
 
 # API routes (macro)
 define_v1_api_routes()

@@ -153,6 +153,16 @@ module Invidious::Routes::Images
 
     if name == "maxres.jpg"
       build_thumbnails(id).each do |thumb|
+        if YT_POOL.client &.head("/vi/#{id}/#{thumb[:url]}.jpg", headers).status_code == 200
+          name = thumb[:url] + ".jpg"
+          break
+        end
+      end
+    end
+    url = "/vi/#{id}/#{name}"
+
+    if name == "maxres.webp"
+      build_thumbnails(id).each do |thumb|
         if YT_POOL.client &.head("/vi_webp/#{id}/#{thumb[:url]}.webp", headers).status_code == 200
           name = thumb[:url] + ".webp"
           break
