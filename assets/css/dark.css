@@ -624,7 +624,7 @@ footer {
   height: 120px;
   display: inline-block;
   content: "";
-  background: url(../logo.svg) no-repeat center center / 36%;
+  background: url(logo_sm.svg) no-repeat center center / 36%;
 }
 @media screen and (max-width: 1000px) {
   #logo h1.pure-menu-heading::after {
