@@ -733,6 +733,7 @@ input[type="search"]:focus::placeholder {
   background: repeating-linear-gradient(to bottom, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px),
               repeating-linear-gradient(to right, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px);
   background-size: 4px 100%, 100% 4px;
+  mix-blend-mode: multiply;
 }
 #channel-banner img {
   padding: 4px;
