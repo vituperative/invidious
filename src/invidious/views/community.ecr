@@ -6,7 +6,7 @@
 <% end %>
 
 <% if channel.banner %>
-    <div class="h-box">
+    <div id="channel-banner" class="h-box">
         <img style="width:100%" src="/ggpht<%= URI.parse(channel.banner.not_nil!.gsub("=w1060-", "=w1280-")).request_target %>">
     </div>
 
