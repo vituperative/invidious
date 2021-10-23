@@ -719,8 +719,8 @@ input[type="search"]:focus::placeholder {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: repeating-linear-gradient(to bottom, rgba(0,0,0,.25) 2px, rgba(255,255,255,.1) 4px),
-              repeating-linear-gradient(to right, rgba(0,0,0,.5) 2px, rgba(255,255,255,.1) 4px);
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px),
+              repeating-linear-gradient(to right, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px);
   background-size: 4px 100%, 100% 4px;
 }
 #channel-banner img {
