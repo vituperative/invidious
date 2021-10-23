@@ -705,6 +705,11 @@ input[type="search"]:focus::placeholder {
   width: 68px !important;
   height: 68px !important;
 }
+#channel-banner img {
+  padding: 4px;
+  width: calc(100% - 8px) !important;
+  box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #333, inset 0 0 0 3px #565353;
+}
 .channel_desc {
   margin-top: -30px;
   padding-top: 20px;
