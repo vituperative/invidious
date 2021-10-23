@@ -527,6 +527,7 @@ summary + #filters hr {
   bottom: 1px;
   left: 2px;
   right: 2px;
+  z-index: 500;
   width: calc(100% - 4px);
   background: #f00;
   height: 40px;
