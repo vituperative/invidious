@@ -18,6 +18,14 @@ h5,
     Oxygen, Ubuntu, Cantarell, fira sans, droid sans, helvetica neue, Helvetica,
     Arial, sans-serif !important;
 }
+body {
+  font-size: 12pt;
+}
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 11pt
+  }
+}
 #contents {
   display: flex;
   flex-direction: column;
@@ -151,7 +159,6 @@ img.thumbnail:hover {
   z-index: 100;
   background-color: rgba(35, 35, 35, 0.75);
   color: #fff;
-  font-size: 11pt;
 }
 .watched {
   z-index: 100;
