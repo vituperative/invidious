@@ -51,8 +51,10 @@ body {
   height: 48px;
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,.4);
+  position: relative;
+  z-index: 10;
 }
-body a.channel-owner {d
+body a.channel-owner {
   padding: 1px 6px;
   color: #fff;
   border-radius: 9px;
@@ -533,7 +535,7 @@ p,
 }
 #descriptionWrapper, .channel-profile span {
   position: relative;
-  z-index: -2;
+  z-index: 8;
   background: #353333;
   border: 1px solid rgba(255,255,255,.1);
   border-radius: 3px;
@@ -542,8 +544,11 @@ p,
 .channel-profile span {
   margin-left: -52px;
   padding: 4px 20px 4px 50px;
-  z-index: -1;
+  z-index: 9;
   border-radius: 0 20px 20px 0;
+}
+.channel-profile > img {
+  z-index: 10;
 }
 #descriptionWrapper {
   margin-top: -12px;
