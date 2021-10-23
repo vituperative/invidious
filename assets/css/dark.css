@@ -589,6 +589,10 @@ u {
 input[type="search"] {
   text-align: center;
 }
+input[type="search"]::placeholder {
+  font-style: italic;
+  opacity: .4;
+}
 input[type="search"]:focus::placeholder {
   color: transparent;
 }
