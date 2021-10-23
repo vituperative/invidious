@@ -144,11 +144,11 @@ div.thumbnail::before {
   content: "";
   display: block;
   height: 100%;
-  width: 100%;
+  width: calc(100% - 6px);
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 3px;
+  right: 3px;
   bottom: 0;
   background: #f00;
   z-index: 100;
