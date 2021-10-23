@@ -550,7 +550,7 @@ p,
 #logo > h1 {
   text-align: center;
 }
-#privacyinfo {
+#privacyinfo, #siteinfo {
   margin: 1% auto 2%;
   padding: 2% 5%;
   width: 80%;
