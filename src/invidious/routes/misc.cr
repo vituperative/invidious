@@ -33,6 +33,11 @@ module Invidious::Routes::Misc
     templated "privacy"
   end
 
+  def self.siteinfo(env)
+    locale = LOCALES[env.get("preferences").as(Preferences).locale]?
+    templated "siteinfo"
+  end
+
   def self.licenses(env)
     locale = LOCALES[env.get("preferences").as(Preferences).locale]?
     rendered "licenses"
