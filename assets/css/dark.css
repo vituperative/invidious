@@ -178,6 +178,9 @@ img.thumbnail:hover {
 .thumbnail:active {
   transform: scale(.99);
 }
+.yt_uploaded, .yt_buttons {
+  z-index: 300;
+}
 .length {
   padding: 2px 8px;
   position: absolute;
