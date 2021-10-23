@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/css/default.css?v=<%= ASSET_COMMIT %>">
 -->
     <link rel="stylesheet" href="/css/dark.css?v=<%= ASSET_COMMIT %>">
-    <style type="text/css">body{filter:opacity(0)}</style>
+    <style>body {overflow:hidden}body::before {content:"";display:block;width:100%;height:100%;position:fixed;top: 0;left;right:0;bottom:0;z-index:999999;background:#272323 url(/logo_sm.svg) no-repeat center center / 40%}</style>
 </head>
 
 <% locale = LOCALES[env.get("preferences").as(Preferences).locale]? %>
@@ -186,6 +186,6 @@
         </script>
         <script src="/js/notifications.js?v=<%= ASSET_COMMIT %>"></script>
     <% end %>
-<style type="text/css">html{background:#272323 !important} body{filter:opacity(1)}</style>
+<style>body{overflow:auto}body::before{display:none}</style>
 </body>
 </html>

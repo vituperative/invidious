@@ -20,11 +20,12 @@ h5,
 }
 html {
  background: #272323 url(/logo_sm.svg) no-repeat center center / 40%;
- position: relative;
  background-blend-mode: soft-light;
 }
 body {
+  position: relative;
   font-size: 12pt;
+  height: 100%;
 }
 @media screen and (max-width: 1000px) {
   body {
@@ -629,9 +630,9 @@ input[type="search"]:focus::placeholder {
   font-weight: 700;
   letter-spacing: 0.05em;
 }
-/*.pure-g {
-  padding-bottom: 20px;
-}*/
+.pure-g {
+  margin-bottom: 20px;
+}
 .pure-g.h-box {
   margin: -7px 0 -14px;
 }
