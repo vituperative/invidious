@@ -25,7 +25,6 @@ html {
 }
 body {
   font-size: 12pt;
-  opacity: 0;
 }
 @media screen and (max-width: 1000px) {
   body {
