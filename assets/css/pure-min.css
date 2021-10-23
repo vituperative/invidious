@@ -517,6 +517,18 @@ a.pure-button-selected {
   border-bottom-right-radius: 2px;
   border-right: none;
 }
+textarea {
+  color: #fff;
+  background: #565050;
+}
+select, input[type=text], input[type=password] {
+    padding: 4px 8px;
+    min-width: 120px !important;
+    color: #fff;
+    border: 1px solid #454040;
+    border-radius: 4px;
+    background: #565050;
+}
 /*
 .pure-form input[type="color"],
 .pure-form input[type="date"],
