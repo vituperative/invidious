@@ -306,7 +306,7 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
     root.each do |child|
       if child["replies"]?
         replies_html = <<-END_HTML
-        <div id="replies" class="pure-g">
+        <div id="replies" class="pure-g script">
           <div class="pure-u-1-24"></div>
           <div class="pure-u-23-24">
             <p>
