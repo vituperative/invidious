@@ -360,6 +360,7 @@ span > select {
   color: #313133;
 }
 .pure-control-group label {
+  vertical-align: top;
   word-wrap: normal;
 }
 a:hover,

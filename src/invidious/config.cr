@@ -23,7 +23,7 @@ struct ConfigPreferences
   property listen : Bool = false
   property local : Bool = false
   property locale : String = "en-US"
-  property max_results : Int32 = 40
+  property max_results : Int32 = 600
   property notifications_only : Bool = false
   property player_style : String = "invidious"
   property quality : String = "hd720"
