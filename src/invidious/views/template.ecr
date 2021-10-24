@@ -112,7 +112,8 @@
                         </div>
                         <% if CONFIG.login_enabled %>
                         <div class="pure-u-1-3">
-                            <a title="<%= translate(locale, "Log in") %>" href="/login?referer=<%= env.get?("current_page") %>" class="pure-menu-heading">
+<!--                            <a title="<%= translate(locale, "Log in") %>" href="/login?referer=<%= env.get?("current_page") %>" class="pure-menu-heading">-->
+                            <a title="<%= translate(locale, "Log in") %>" href="/login" class="pure-menu-heading">
                                 <i class="icon ion-ios-log-in"></i>
                             </a>
                         </div>
