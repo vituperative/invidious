@@ -839,6 +839,13 @@ input[type="search"]:focus::placeholder {
   width: 15%;
   white-space: nowrap;
 }
+@media screen and (max-width: 400px) {
+  #categories a, #categories a:hover, #categories a:focus, #categories b {
+    padding-left: 0;
+    font-size: 90%;
+    background: none;
+  }
+}
 input, input[type=checkbox], input[type=radio] {
   accent-color: #c19f9f;
 }
