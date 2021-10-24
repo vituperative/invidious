@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="/fonts/ionicons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="/fonts/ionicons.woff2" type="font/woff2">
+    <link rel="preload" as="image" href="/loader.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="/logo_sm.svg" type="image/svg+xml">
     <%= yield_content "header" %>
 <!--
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=<%= ASSET_COMMIT %>">
@@ -24,7 +26,11 @@
     <link rel="stylesheet" href="/css/default.css?v=<%= ASSET_COMMIT %>">
 -->
     <link rel="stylesheet" href="/css/dark.css?v=<%= ASSET_COMMIT %>">
-    <style>body {overflow:hidden}body::before {content:"";display:block;width:100%;height:100%;position:fixed;top: 0;left;right:0;bottom:0;z-index:999999;background: url(/loader.svg) no-repeat calc(50% - 174px) calc(50% + 5px) / 32px, url(/logo_sm.svg) no-repeat center center / 400px, #272323;background-blend-mode:soft-light}</style>
+    <style>
+        body {overflow:hidden}
+        body::before {content:"";display:block;width:100%;height:100%;position:fixed;top: 0;left;right:0;bottom:0;z-index:999999;background: url(/loader.svg) no-repeat calc(50% - 174px) calc(50% + 5px) / 32px, url(/logo_sm.svg) no-repeat center center / 400px, #272323;background-blend-mode:soft-light}
+        @media screen and (max-width: 600px) {body::before {background: #272323 url(/loader.svg) no-repeat center center / 32px}}
+    </style>
 </head>
 
 <% locale = LOCALES[env.get("preferences").as(Preferences).locale]? %>
