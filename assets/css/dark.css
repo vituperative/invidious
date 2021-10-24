@@ -101,6 +101,22 @@ body a.channel-owner {
     flex: 0 0 40%;
   }
 }
+.feed-menu a[href="/feed/trending"] {
+  background: url(trending.svg) no-repeat center center / 20px, url(trending_hover.svg) no-repeat center center / 0;
+  color: transparent;
+}
+.feed-menu a[href="/feed/trending"]:hover, .feed-menu a[href="/feed/trending"]:focus {
+  background: url(trending_hover.svg) no-repeat center center / 20px;
+  color: transparent;
+}
+.feed-menu a[href="/feed/popular"] {
+  background: url(popular.svg) no-repeat center center / 20px, url(popular_hover.svg) no-repeat center center / 0;
+  color: transparent;
+}
+.feed-menu a[href="/feed/popular"]:hover, .feed-menu a[href="/feed/popular"]:focus {
+  background: url(popular_hover.svg) no-repeat center center / 20px;
+  color: transparent;
+}
 .h-box {
   padding-left: 1em;
   padding-right: 1em;
