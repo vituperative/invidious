@@ -426,7 +426,7 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
 
     if comments["continuation"]?
       html << <<-END_HTML
-      <div class="pure-g">
+      <div class="pure-g script">
         <div class="pure-u-1">
           <p>
             <a href="javascript:void(0)" data-continuation="#{comments["continuation"]}"
