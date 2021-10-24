@@ -847,8 +847,8 @@ input[type="search"]:focus::placeholder {
   background: rgba(255,255,255,.1);
 }
 #vidinfo {
-    margin: 0 auto;
-    width: calc(90% - 20px);
+  margin: 0 20px;
+  width: calc(90% - 40px);
 }
 @media screen and (max-width: 400px) {
   #categories a, #categories a:hover, #categories a:focus, #categories b {
