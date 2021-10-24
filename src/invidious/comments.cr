@@ -426,12 +426,13 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
 
     if comments["continuation"]?
       html << <<-END_HTML
-      <div class="pure-g script">
-        <div class="pure-u-1">
-          <p>
+      <div class="pure-g">
+        <div class="pure-u-1 script">
+          <p class="script">
             <a href="javascript:void(0)" data-continuation="#{comments["continuation"]}"
               data-onclick="get_youtube_replies" data-load-more #{"data-load-replies" if is_replies}>#{translate(locale, "Load more")}</a>
           </p>
+          <noscript><p>To load more comments and view comment replies, please enable Javascript in your browser.</p></noscript>
         </div>
       </div>
       END_HTML

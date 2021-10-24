@@ -839,6 +839,17 @@ input[type="search"]:focus::placeholder {
   width: 15%;
   white-space: nowrap;
 }
+#watch_sidebar, #related, #vidinfo {
+  padding: 3% 5%;
+  line-height: 1.3;
+  font-size: 95%;
+  border-radius: 4px;
+  background: rgba(255,255,255,.1);
+}
+#vidinfo {
+    margin: 0 auto;
+    width: calc(90% - 20px);
+}
 @media screen and (max-width: 400px) {
   #categories a, #categories a:hover, #categories a:focus, #categories b {
     padding-left: 0;
