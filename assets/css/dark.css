@@ -826,13 +826,13 @@ input[type="search"]:focus::placeholder {
 }
 #categories a, #categories b {
   padding-left: 16px;
-  background: url(tag_static.svg) no-repeat left center / 12px;
+  background: url(/tag_static.svg) no-repeat left center / 12px;
 }
 #categories a {
-  background: url(tag_link.svg) no-repeat left center / 12px;
+  background: url(/tag_link.svg) no-repeat left center / 12px;
 }
 #categories a:hover, #categories a:focus {
-  background: url(tag_hover.svg) no-repeat left center / 12px;
+  background: url(/tag_hover.svg) no-repeat left center / 12px;
 }
 #categories .pure-u-1.pure-md-1-3 {
   margin: 0 auto;
