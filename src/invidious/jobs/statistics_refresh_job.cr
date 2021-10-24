@@ -30,7 +30,7 @@ class Invidious::Jobs::StatisticsRefreshJob < Invidious::Jobs::BaseJob
 
     loop do
       refresh_stats
-      sleep 1.hour
+      sleep 8.hour
       Fiber.yield
     end
   end
