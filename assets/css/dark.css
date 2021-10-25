@@ -171,8 +171,6 @@ div.thumbnail::before {
   bottom: 3px;
   z-index: 100;
   pointer-events: none;
-/*  background: repeating-linear-gradient(to bottom, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px),
-              repeating-linear-gradient(to right, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px);*/
   background: url(/tile.svg) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
@@ -189,13 +187,10 @@ img.thumbnail {
   top: 0;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
-/*  filter: saturate(.5);*/
-/*  opacity: .6;*/
   will-change: transform;
 }
 img.thumbnail:hover {
-/*  filter: saturate(1);*/
-/*  opacity: 1;*/
+  box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #ca7740;
 }
 .thumbnail:active {
   transform: scale(.99);
