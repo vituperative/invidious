@@ -314,7 +314,8 @@ struct Video
 
       json.field "authorThumbnails" do
         json.array do
-          qualities = {32, 48, 76, 100, 176, 512}
+#          qualities = {32, 48, 76, 100, 176, 512}
+          qualities = {32, 48, 76, 100, 176}
 
           qualities.each do |quality|
             json.object do
@@ -450,7 +451,8 @@ struct Video
                 if rv["author_thumbnail"]?
                   json.field "authorThumbnails" do
                     json.array do
-                      qualities = {32, 48, 76, 100, 176, 512}
+#                      qualities = {32, 48, 76, 100, 176, 512}
+                      qualities = {32, 48, 76, 100, 176}
 
                       qualities.each do |quality|
                         json.object do
