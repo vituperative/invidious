@@ -180,6 +180,22 @@ div.thumbnail::before {
   background: url(/tile.svg) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
+div.thumbnail::after {
+  content: "";
+  display: block;
+  height: calc(100% - 6px);
+  width: calc(100% - 6px);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  z-index: 1;
+  z-index: 999;
+  background: url(/nothumb.svg) no-repeat center center / 100%;
+  mix-blend-mode: overlay;
+  animation: ease fade-out .1s 3.5s both !important;
+}
 div.thumbnail:hover::before {
   background: rgba(255,128,0,.3);
   mix-blend-mode: multiply;
@@ -191,9 +207,10 @@ img.thumbnail {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 2;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
-  background: url(/nothumb.svg) no-repeat center center / 40%;
+  background: url(/nothumb.svg) no-repeat center center / 100%;
   animation: ease fade .1s 3.5s both;
   will-change: transform;
   contain: strict;
@@ -864,6 +881,10 @@ input[type="search"]:focus::placeholder {
 @keyframes fade {
   from {filter: opacity(0)}
   to {filter: opacity(1)}
+}
+@keyframes fade-out {
+  from {filter: opacity(1)}
+  to {filter: opacity(0)}
 }
 @media screen and (max-width: 400px) {
   #categories a, #categories a:hover, #categories a:focus, #categories b {
