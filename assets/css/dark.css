@@ -951,11 +951,13 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     position: absolute;
     top: 3px;
     right: 18px;
+    z-index: 200;
     box-sizing: border-box;
-    background: rgba(35,35,35,.75);
+    background: rgba(0,0,0,.65);
     contain: layout;
     pointer-events: none;
     animation: ease fade .1s 4s both;
+    will-change: transform;
   }
   .flex-right.yt_views p {
     text-align: right;
