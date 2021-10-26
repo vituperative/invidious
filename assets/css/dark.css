@@ -192,7 +192,7 @@ div.thumbnail::after {
   bottom: 3px;
   z-index: 1;
   z-index: 999;
-  background: url(/nothumb.svg) no-repeat center center / 100%;
+  background: url(/placeholder.svg) no-repeat center center / 20%;
   mix-blend-mode: overlay;
   animation: ease fade-out .1s 3.5s both !important;
 }
