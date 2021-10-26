@@ -906,9 +906,9 @@ input[type=checkbox]:focus, input[type=radio]:focus {
 @media screen and (min-width: 1200px) {
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
-    border: 1px solid rgba(0,0,0,.4);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,.1);
-    background: rgba(0,0,0,.15);
+    border: 1px solid #181414;
+    box-shadow: inset 0 0 0 1px #353232;
+    background: #211e1e;
   }
   .imagethumb .icon-buttons {
     top: 2px;
