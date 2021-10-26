@@ -171,7 +171,7 @@ div.thumbnail::before {
   bottom: 3px;
   z-index: 100;
   pointer-events: none;
-  background: url(tile.svg) repeat center center / 4px;
+  background: url(/tile.svg) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
 div.thumbnail:hover::before {
@@ -774,7 +774,7 @@ input[type="search"]:focus::placeholder {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: url(tile.svg) repeat center center / 4px;
+  background: url(/tile.svg) repeat center center / 4px;
   mix-blend-mode: multiply;
   contain: strict;
 }
