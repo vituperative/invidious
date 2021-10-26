@@ -180,6 +180,9 @@ div.thumbnail::before {
   background: url(/tile.svg) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
+div.thumbnail:hover::before, div.thumbnail:hover::after {
+  pointer-events: none;
+}
 div.thumbnail::after {
   content: "";
   display: block;
