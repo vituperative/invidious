@@ -43,7 +43,7 @@ body {
 .channel-profile {
   position: relative;
   z-index: 10;
-  animation: ease fade .1s 3s both;
+  animation: ease fade .1s 4s both;
   will-change: transform;
 }
 .channel-profile > * {
@@ -193,6 +193,7 @@ img.thumbnail {
   top: 0;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
+  animation: ease fade .1s 3.5s both;
   will-change: transform;
   contain: strict;
 }
@@ -211,19 +212,20 @@ img.thumbnail:hover {
   right: 0.25em;
   bottom: -0.75em;
   z-index: 100;
-  background-color: rgba(35, 35, 35, 0.75);
   color: #fff;
+  background-color: rgba(35, 35, 35, 0.75);
+  animation: ease fade .1s 4.5s both;
 }
 .watched {
-  z-index: 100;
-  position: absolute;
-  background-color: rgba(35, 35, 35, 0.75);
-  color: #fff;
-  border-radius: 2px;
   padding: 4px 8px;
-  font-size: 16px;
+  position: absolute;
   left: 0.2em;
   top: -0.7em;
+  z-index: 100;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 2px;
+  background-color: rgba(35, 35, 35, 0.75);
 }
 .navbar {
   margin: 1em 0;
@@ -350,7 +352,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 p.channel-name {
   margin: 0;
-  animation: ease fade .1s 3s both;
+  animation: ease fade .1s 4s both;
 }
 p.video-data {
   margin: 0;
@@ -606,7 +608,7 @@ p,
   border-top: 1px solid rgba(255,255,255,.1);
   background: #1d1b1b;
   contain: content;
-  animation: ease fade .1s 3s both;
+  animation: ease fade .1s 4.5s both;
 }
 #banner small {
   display: inline-block;
@@ -694,6 +696,7 @@ input[type="search"]:focus::placeholder {
   top: 4px;
   left: 18px;
   background: rgba(35, 35, 35, 0.75);
+  animation: ease fade .1s 4s both;
 }
 .imagethumb .icon-buttons .icon {
   margin: -1px 1px 0;
@@ -721,6 +724,7 @@ input[type="search"]:focus::placeholder {
   text-overflow: ellipsis;
   line-height: 1.4 !important;
   contain: content;
+  animation: ease fade .1s 4s both;
 }
 .pure-g.h-box.pagenav {
   margin: -12px -9px 14px;
@@ -906,14 +910,14 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     z-index: 10;
     background: none;
     contain: layout;
-    animation: ease fade .1s 3.5s both;
+    animation: ease fade .1s 4s both;
   }
   .flex-left.yt_uploaded {
     position: absolute;
     right: 15px;
     bottom: 15px;
     contain: layout;
-    animation: ease fade .1s 3.5s both;
+    animation: ease fade .1s 4s both;
   }
   .flex-right.yt_views {
     padding: 0 8px 17px 9px;
@@ -925,7 +929,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     background: rgba(35,35,35,.75);
     contain: layout;
     pointer-events: none;
-    animation: ease fade .1s 3s both;
+    animation: ease fade .1s 4s both;
   }
   .flex-right.yt_views p {
     text-align: right;
