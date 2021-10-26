@@ -40,6 +40,12 @@ body {
 .deleted {
   background-color: rgb(255, 0, 0, 0.5);
 }
+.channel-profile {
+  position: relative;
+  z-index: 10;
+  animation: ease fade .1s 3s both;
+  will-change: transform;
+}
 .channel-profile > * {
   font-size: 1.17em;
   font-weight: 700;
@@ -344,6 +350,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 p.channel-name {
   margin: 0;
+  animation: ease fade .1s 3s both;
 }
 p.video-data {
   margin: 0;
@@ -366,12 +373,8 @@ footer span {
   display: block;
 }
 @keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% {transform: rotate(0)}
+  100% {transform: rotate(360deg)}
 }
 fieldset > select,
 span > select {
@@ -401,16 +404,6 @@ body {
 .pure-menu-heading {
   color: #f0f0f0;
 }
-/*
-input,
-select,
-textarea {
-  color: #272323;
-}
-.pure-form input[type="file"] {
-  color: #f0f0f0;
-}
-*/
 .searchbar input {
   background-color: inherit;
   color: inherit;
@@ -470,16 +463,6 @@ hr {
   font-size: 130%;
   cursor: pointer;
 }
-/*
-#filters > summary::before {
-  content: "[ + ]";
-  font-size: 1.5em;
-}
-#filters[open] > summary::before {
-  content: "[ - ]";
-  font-size: 1.5em;
-}
-*/
 details#filters {
   display: inline;
   margin: 15px 5px 10px;
@@ -623,6 +606,7 @@ p,
   border-top: 1px solid rgba(255,255,255,.1);
   background: #1d1b1b;
   contain: content;
+  animation: ease fade .1s 3s both;
 }
 #banner small {
   display: inline-block;
@@ -695,6 +679,7 @@ input[type="search"]:focus::placeholder {
 .imagethumb {
   position: relative;
   font-size: 90%;
+  animation: ease fade .1s 2s both;
 }
 .imagethumb p:not(.length)[dir="auto"] {
   margin: 5px 0 -10px;
@@ -871,6 +856,10 @@ input[type="search"]:focus::placeholder {
   margin: 0 20px;
   width: calc(90% - 40px);
 }
+@keyframes fade {
+  from {filter: opacity(0)}
+  to {filter: opacity(1)}
+}
 @media screen and (max-width: 400px) {
   #categories a, #categories a:hover, #categories a:focus, #categories b {
     padding-left: 0;
@@ -917,12 +906,14 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     z-index: 10;
     background: none;
     contain: layout;
+    animation: ease fade .1s 3.5s both;
   }
   .flex-left.yt_uploaded {
     position: absolute;
     right: 15px;
     bottom: 15px;
     contain: layout;
+    animation: ease fade .1s 3.5s both;
   }
   .flex-right.yt_views {
     padding: 0 8px 17px 9px;
@@ -934,6 +925,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     background: rgba(35,35,35,.75);
     contain: layout;
     pointer-events: none;
+    animation: ease fade .1s 3s both;
   }
   .flex-right.yt_views p {
     text-align: right;
