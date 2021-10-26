@@ -1,3 +1,8 @@
+:root {
+  --tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath fill='%23fff' d='M0 0h4v1H0z' opacity='.1'/%3E%3Cpath d='M0 1h4v1H0z' opacity='.1'/%3E%3Cpath d='M2 0v4H1V0zm2 0v4H3V0z' opacity='.1'/%3E%3Cpath fill='%23fff' d='M0 2h4v1H0z' opacity='.1'/%3E%3Cpath d='M0 3h4v1H0z' opacity='.1'/%3E%3C/svg%3E");
+  --placeholder: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='11.9' x2='7.7' y1='14.3' y2='10.1' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23916f6f'/%3E%3Cstop offset='1' stop-color='%23c8b7b7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg opacity='.4' transform='translate(1 1) scale(3.66142)'%3E%3Cpath fill='%23483737' d='M8 4.6a.5.5 0 0 1-.7-.1l-2.1-3a.5.5 0 0 1 0-.8.5.5 0 0 1 .7.2l2.1 3a.5.5 0 0 1 0 .7zm.4 0a.5.5 0 0 0 .6-.1l2.2-3a.5.5 0 0 0-.1-.8.5.5 0 0 0-.7.2l-2.1 3a.5.5 0 0 0 0 .7z'/%3E%3Cpath fill='%236c5353' d='M1.5 16.3h14a1.5 1.5 0 0 0 1.4-1.5V5.3a1.5 1.5 0 0 0-1.4-1.5h-14A1.5 1.5 0 0 0 0 5.2v9.6a1.5 1.5 0 0 0 1.5 1.5z'/%3E%3Cg fill='%23ac9393'%3E%3Ccircle cx='14.7' cy='6.9' r='1.1'/%3E%3Ccircle cx='14.7' cy='10.5' r='1.1'/%3E%3C/g%3E%3Crect width='10.9' height='9.4' x='1.8' y='5.5' fill='%23c8b7b7' rx='1.2'/%3E%3Cpath fill='url(%23a)' d='m12.2 5.9-9.9 8.6c.3.3.6.4 1 .4h8.3a1 1 0 0 0 1.1-1v-7c0-.4-.2-.8-.4-1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 * {
   outline: none;
 }
@@ -177,7 +182,7 @@ div.thumbnail::before {
   bottom: 3px;
   z-index: 100;
   pointer-events: none;
-  background: url(/tile.svg) repeat center center / 4px;
+  background: var(--tile) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
 div.thumbnail:hover::before, div.thumbnail:hover::after {
@@ -195,7 +200,7 @@ div.thumbnail::after {
   bottom: 3px;
   z-index: 1;
   z-index: 999;
-  background: url(/placeholder.svg) no-repeat center center / 20%;
+  background:var(--placeholder) no-repeat center center / 20%;
   mix-blend-mode: overlay;
   animation: ease fade-out .1s 3.5s both !important;
 }
@@ -784,7 +789,7 @@ input[type="search"]:focus::placeholder {
   left: 8px;
   right: 8px;
   bottom: 8px;
-  background: url(/tile.svg) repeat center center / 4px;
+  background:  var(--tile) repeat center center / 4px;
   mix-blend-mode: multiply;
   contain: strict;
 }
