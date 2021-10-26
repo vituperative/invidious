@@ -171,7 +171,7 @@ div.thumbnail::before {
   bottom: 3px;
   z-index: 100;
   pointer-events: none;
-  background: url(/tile.svg) repeat center center / 4px;
+  background: url(tile.svg) repeat center center / 4px;
   mix-blend-mode: color-burn;
 }
 div.thumbnail:hover::before {
@@ -188,6 +188,7 @@ img.thumbnail {
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
   will-change: transform;
+  contain: strict;
 }
 img.thumbnail:hover {
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #ca7740;
@@ -612,7 +613,6 @@ p,
   background: rgba(255,255,255,.1);
 }
 #banner {
-/*  margin-bottom: -20px;*/
   padding: 2px 10px 6px;
   text-align: center;
   position: fixed;
@@ -622,6 +622,7 @@ p,
   z-index: 999;
   border-top: 1px solid rgba(255,255,255,.1);
   background: #1d1b1b;
+  contain: content;
 }
 #banner small {
   display: inline-block;
@@ -733,6 +734,8 @@ input[type="search"]:focus::placeholder {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.4 !important;
+  contain: content;
 }
 .pure-g.h-box.pagenav {
   margin: -12px -9px 14px;
@@ -771,11 +774,9 @@ input[type="search"]:focus::placeholder {
   left: 8px;
   right: 8px;
   bottom: 8px;
-/*  background: repeating-linear-gradient(to bottom, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px),
-              repeating-linear-gradient(to right, rgba(0,0,0,.1) 2px, rgba(255,255,255,.1) 4px);
-  background-size: 4px 100%, 100% 4px;*/
-  background: url(/tile.svg) repeat center center / 4px;
+  background: url(tile.svg) repeat center center / 4px;
   mix-blend-mode: multiply;
+  contain: strict;
 }
 #channel-banner img {
   padding: 4px;
@@ -915,11 +916,13 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     left: 20px;
     z-index: 10;
     background: none;
+    contain: layout;
   }
   .flex-left.yt_uploaded {
     position: absolute;
     right: 15px;
     bottom: 15px;
+    contain: layout;
   }
   .flex-right.yt_views {
     padding: 0 8px 17px 9px;
@@ -929,6 +932,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     right: 18px;
     box-sizing: border-box;
     background: rgba(35,35,35,.75);
+    contain: layout;
     pointer-events: none;
   }
   .flex-right.yt_views p {
