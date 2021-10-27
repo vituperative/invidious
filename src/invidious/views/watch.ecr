@@ -275,7 +275,7 @@
                     <% video.related_videos.each do |rv| %>
                         <% if rv["id"]? %>
                                 <% if !env.get("preferences").as(Preferences).thin_mode %>
-                                    <div class="thumbnail">
+                                    <div class="thumbnail" data-tooltip="<%= rv["title"] %>">
                                         <a href="/watch?v=<%= rv["id"] %>"><img loading="eager" class="thumbnail" src="/vi_webp/<%= rv["id"] %>/mqdefault.webp"></a>
                                         <p class="length"><%= recode_length_seconds(rv["length_seconds"]?.try &.to_i? || 0) %></p>
                                         <div class="pure-u-14-24 yt_author">
@@ -292,8 +292,8 @@
                                                 <% end %>
                                             <% end %>
                                         </div>
-                                        <p class="vidtitle"><%= rv["title"] %></p>
                                     </div>
+                                    <p class="vidtitle"><%= rv["title"] %></p>
                                 <% end %>
                                     <hr>
                         <% end %>

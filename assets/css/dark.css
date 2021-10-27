@@ -988,6 +988,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
   #related .vidtitle {
     margin-top: 3px;
     line-height: 1.1;
+    font-size: 85%;
   }
   #related .yt_author {
     padding: 4px 8px;
