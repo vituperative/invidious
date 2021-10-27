@@ -165,6 +165,9 @@ body a.pure-button-primary:hover {
   background-color: #00b6f0;
   color: #fff;
 }
+.thumbcontainer {
+  contain: layout;
+}
 div.thumbnail {
   padding: 28.125%;
   position: relative;
