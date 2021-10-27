@@ -172,6 +172,7 @@ div.thumbnail {
   padding: 28.125%;
   position: relative;
   box-sizing: border-box;
+  contain: layout;
 }
 div.thumbnail::before {
   content: "";
