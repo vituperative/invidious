@@ -279,26 +279,25 @@
 <!--                                        <img loading="eager" class="thumbnail" src="/vi/<%= rv["id"] %>/mqdefault.jpg">-->
                                         <a href="/watch?v=<%= rv["id"] %>"><img loading="eager" class="thumbnail" src="/vi_webp/<%= rv["id"] %>/mqdefault.webp"></a>
                                         <p class="length"><%= recode_length_seconds(rv["length_seconds"]?.try &.to_i? || 0) %></p>
+                                        <div class="pure-u-14-24 yt_author">
+                                            <% if rv["ucid"]? %>
+                                                <a href="/channel/<%= rv["ucid"] %>"><%= rv["author"]? %></a>
+                                            <% else %>
+                                                <b><%= rv["author"]? %></b>
+                                            <% end %>
+                                        </div>
                                     </div>
                                 <% end %>
-                                <p style="width:100%"><%= rv["title"] %></p>
+                                <div class="pure-u-10-24" style="text-align:right">
+                                    <% if views = rv["short_view_count_text"]?.try &.delete(", views watching") %>
+                                        <% if !views.empty? %>
+                                            <b style="width:100%"><%= translate(locale, "`x` views", views) %></b>
+                                        <% end %>
+                                    <% end %>
+                                </div>
+                                <p class="vidtitle"><%= rv["title"] %></p>
 <!--                                <h5 class="pure-g">-->
                                     <hr>
-                                    <div class="pure-u-14-24">
-                                        <% if rv["ucid"]? %>
-                                            <b style="width:100%"><a href="/channel/<%= rv["ucid"] %>"><%= rv["author"]? %></a></b>
-                                        <% else %>
-                                            <b style="width:100%"><%= rv["author"]? %></b>
-                                        <% end %>
-                                    </div>
-
-                                    <div class="pure-u-10-24" style="text-align:right">
-                                        <% if views = rv["short_view_count_text"]?.try &.delete(", views watching") %>
-                                            <% if !views.empty? %>
-                                                <b class="width:100%"><%= translate(locale, "`x` views", views) %></b>
-                                            <% end %>
-                                        <% end %>
-                                    </div>
 <!--                                </h5>-->
 <!--                            </a>-->
                         <% end %>
