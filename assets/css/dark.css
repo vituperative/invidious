@@ -223,7 +223,7 @@ img.thumbnail {
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
   background: url(/nothumb.svg) no-repeat center center / 100% 100%;
-  animation: ease fade .1s 3.5s both, linear remove-bg .1s 20s both;
+  animation: ease fade .1s 3.5s both, linear remove-bg .1s 30s both;
   will-change: transform;
   contain: strict;
 }
@@ -579,12 +579,7 @@ summary + #filters hr {
 #showmore a:not(:hover):not(:focus):not(:active) {
   color: #fff;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
+h1, h2, h3, h4, h5, p,
 #descriptionWrapper,
 #description-box {
   unicode-bidi: plaintext;
@@ -667,8 +662,7 @@ footer {
     background-size: auto 52%;
   }
 }
-a,
-u {
+a, u {
   text-decoration: none !important;
 }
 input[type="search"] {
@@ -939,8 +933,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
   }
 }
 @media screen and (min-width: 1200px) {
-  .pure-u-md-1-4,
-  .pure-u-md-6-24 {
+  .thumbcontainer {
     border: 1px solid #181414;
     box-shadow: inset 0 0 0 1px #353232;
     background: #211e1e;
