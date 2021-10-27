@@ -994,7 +994,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     font-size: 85%;
   }
   #related .length {
-    margin-right: 3px;
+    margin-right: -1px;
   }
   #related .yt_author {
     padding: 4px 8px;
