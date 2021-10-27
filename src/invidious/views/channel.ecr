@@ -31,9 +31,9 @@
 </div>
 
 <div class="h-box">
-    <div id="descriptionWrapper">
-        <p><span style="white-space:pre-wrap"><%= channel.description_html %></span></p>
-    </div>
+    <% if channel.description.size > 0 %>
+        <div id="descriptionWrapper"><p><span style="white-space:pre-wrap"><%= channel.description_html %></span></p></div>
+    <% end %>
 </div>
 
 <div class="h-box">

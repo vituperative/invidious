@@ -225,16 +225,18 @@
             </p>
 
             <div id="description-box"> <!-- Description -->
-                <% if video.description.size < 200 || params.extend_desc %>
-                    <div id="descriptionWrapper">
-                        <%= video.description_html %>
-                    </div>
-                <% else %>
-                    <input id="descexpansionbutton" type="checkbox"/>
-                    <label id="showmore" for="descexpansionbutton"><a>...</a></label>
-                    <div id="descriptionWrapper">
-                        <%= video.description_html %>
-                    </div>
+                <% if video.description.size > 0 %>
+                    <% if video.description.size < 400 || params.extend_desc %>
+                        <div id="descriptionWrapper">
+                            <%= video.description_html %>
+                        </div>
+                    <% else %>
+                        <input id="descexpansionbutton" type="checkbox"/>
+                        <label id="showmore" for="descexpansionbutton"><a>...</a></label>
+                        <div id="descriptionWrapper">
+                            <%= video.description_html %>
+                        </div>
+                    <% end %>
                 <% end %>
             </div>
 
