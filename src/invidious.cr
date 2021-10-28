@@ -52,7 +52,8 @@ MAX_ITEMS_PER_PAGE = 1500
 
 REQUEST_HEADERS_WHITELIST  = {"accept", "accept-encoding", "cache-control", "content-length", "if-none-match", "range"}
 RESPONSE_HEADERS_BLACKLIST = {"access-control-allow-origin", "alt-svc", "server"}
-HTTP_CHUNK_SIZE            = 10485760 # ~10MB
+#HTTP_CHUNK_SIZE            = 10485760 # ~10MB
+HTTP_CHUNK_SIZE            = 5242880 # ~5MB
 
 CURRENT_BRANCH  = {{ "#{`git branch | sed -n '/* /s///p'`.strip}" }}
 CURRENT_COMMIT  = {{ "#{`git rev-list HEAD --max-count=1 --abbrev-commit`.strip}" }}
@@ -205,8 +206,7 @@ before_all do |env|
   env.response.headers["Content-Security-Policy"] = {
     "default-src 'none'",
 #    "script-src 'self'",
-    "script-src 'none'",
-#    "style-src 'self' 'unsafe-inline'",
+    "style-src 'self' 'unsafe-inline'",
     "style-src 'self'",
     "img-src 'self' data:",
     "font-src 'self' data:",
@@ -1357,7 +1357,7 @@ error 500 do |env, ex|
 end
 
 static_headers do |response|
-  response.headers.add("Cache-Control", "max-age=2629800")
+  response.headers.add("Cache-Control", "public, max-age=2629800, immutable")
 end
 
 public_folder "assets"
