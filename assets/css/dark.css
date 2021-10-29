@@ -103,6 +103,7 @@ body a.channel-owner {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  contain: content;
 }
 .feed-menu-item {
   text-align: center;
@@ -223,7 +224,8 @@ img.thumbnail {
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #aaa;
   object-fit: cover;
   background: url(/nothumb.svg) no-repeat center center / calc(100% - 8px) calc(100% - 8px);
-  animation: ease fade .1s 3.5s both, linear remove-bg .1s 45s both;
+/*  animation: ease fade .1s 3.5s both, linear remove-bg .1s 45s both;*/
+  animation: ease fade .1s 3.5s both;
   will-change: transform;
   contain: strict;
 }
@@ -265,6 +267,7 @@ div.thumbnail:active img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  contain: content;
 }
 .navbar > div {
   flex: 1;
