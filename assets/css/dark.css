@@ -834,6 +834,9 @@ input[type="search"]:focus::placeholder {
 .index-link.pure-menu-heading:active {
   transform: scale(.9);
 }
+#comments {
+  display: none;
+}
 #comments .pure-g {
   padding-left: 40px;
   width: calc(100% - 40px) !important;
@@ -846,7 +849,7 @@ input[type="search"]:focus::placeholder {
   height: 32px !important;
 }
 #comments p[style] {
-    width: calc(100% + 60px);
+  width: calc(100% + 60px);
 }
 #comments br+br+br{
   display: none;
@@ -854,7 +857,7 @@ input[type="search"]:focus::placeholder {
 #replies.pure-g {
   margin: 0 -40px 0 -51px;
   padding: 0;
-  width: calc(100% + 128px) !important;
+  width: calc(100% + 117px) !important;
   border-radius: 0 0 8px 8px;
 }
 #categories {
