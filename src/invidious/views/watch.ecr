@@ -213,9 +213,6 @@
                 </div>
             </a>
 
-            <% sub_count_text = video.sub_count_text %>
-            <%= rendered "components/subscribe_widget" %>
-
             <p id="published-date">
                 <% if video.premiere_timestamp.try &.> Time.utc %>
                     <b><%= video.premiere_timestamp.try { |t| translate(locale, "Premieres `x`", t.to_s("%B %-d, %R UTC")) } %></b>
@@ -238,6 +235,8 @@
                         </div>
                     <% end %>
                 <% end %>
+                <% sub_count_text = video.sub_count_text %>
+                <%= rendered "components/subscribe_widget" %>
             </div>
 
             <hr>
