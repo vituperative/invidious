@@ -54,7 +54,7 @@ body {
   margin-bottom: -27px;
 }
 #vidinfo #descriptionWrapper {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 .channel-profile > * {
   font-size: 1.17em;
@@ -69,6 +69,16 @@ body {
   border: 2px solid rgba(255,255,255,.4);
   position: relative;
   z-index: 10;
+}
+#vidinfo #published-date {
+  position: absolute;
+  right: 5.5%;
+  top: 8%;
+  font-style: italic;
+  font-size: 90%;
+}
+#vidinfo b {
+  font-weight: 600;
 }
 body a.channel-owner {
   padding: 1px 6px;
