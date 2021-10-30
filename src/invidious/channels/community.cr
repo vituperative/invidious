@@ -172,7 +172,8 @@ def fetch_channel_community(ucid, continuation, locale, format, thin_mode)
                           aspect_ratio = (width.to_f / height.to_f)
                           url = thumbnail["url"].as_s.gsub(/=w\d+-h\d+(-p)?(-nd)?(-df)?(-rwa)?/, "=s640")
 
-                          qualities = {320, 560, 640, 1280, 2000}
+##                          qualities = {320, 560, 640, 1280, 2000}
+                          qualities = {320, 560, 640, 1280}
 
                           qualities.each do |quality|
                             json.object do
