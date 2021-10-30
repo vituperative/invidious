@@ -399,7 +399,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .video-card-row {
   margin: 15px 0;
-  border-top: 1px solid rgba(255,255,255,.1);
+  border-top: 1px solid #363333;
 }
 .video-card-row .video-data + .video-data {
   font-weight: 600;
@@ -969,8 +969,10 @@ input[type=checkbox]:focus, input[type=radio]:focus {
  top: 5px;
  right: 5px;
 }
-.playlist .vidtitle {
-  margin-bottom: -5px !important;
+.playlist .vid_title {
+  margin-bottom: -1px !important;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #363333;
 }
 .playlist .channel_name {
   margin: 5px 0 0 !important;
@@ -1013,6 +1015,12 @@ input[type=checkbox]:focus, input[type=radio]:focus {
     background: none;
     contain: layout;
     animation: ease fade .1s 4s both;
+  }
+  .playlist .imagethumb .icon-buttons {
+    width: calc(100% - 44px);
+    top: 3px;
+    left: 17px;
+    z-index: 10;
   }
   .flex-left.yt_uploaded {
     position: absolute;
