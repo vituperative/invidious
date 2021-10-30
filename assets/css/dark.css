@@ -624,12 +624,13 @@ h1, h2, h3, h4, h5, p,
   height: auto;
   max-height: 90px;
   overflow: auto;
-  font-size: 90%:
+  font-size: 90%;
   scrollbar-width: thin;
 }
 #description-box #descriptionWrapper {
   margin-top: 0;
   padding: 12px 20px 14px;
+  max-height: auto;
 }
 #logo > h1 {
   text-align: center;
