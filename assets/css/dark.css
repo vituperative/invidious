@@ -592,7 +592,7 @@ summary + #filters hr {
 }
 #showmore {
   position: absolute;
-  bottom: 11px;
+  bottom: 1px;
   left: 2px;
   right: 2px;
   z-index: 500;
