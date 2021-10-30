@@ -232,11 +232,11 @@
                         <label id="showmore" for="descexpansionbutton"><a>...</a></label>
                         <div id="descriptionWrapper">
                             <%= video.description_html %>
+                            <% sub_count_text = video.sub_count_text %>
+                            <%= rendered "components/subscribe_widget" %>
                         </div>
                     <% end %>
                 <% end %>
-                <% sub_count_text = video.sub_count_text %>
-                <%= rendered "components/subscribe_widget" %>
             </div>
 
             <hr>
