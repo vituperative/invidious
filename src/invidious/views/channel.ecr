@@ -35,7 +35,7 @@
 
 <div class="h-box">
     <div id="descriptionWrapper">
-        <p><span style="white-space:pre-wrap"><%= XML.parse_html(channel.description_html).xpath_node(%q(.//pre)).try &.content %></span></p>
+        <p><%= channel.description_html %></p>
         <% sub_count_text = number_to_short_text(channel.sub_count) %>
         <%= rendered "components/subscribe_widget" %>
     </div>

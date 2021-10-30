@@ -34,7 +34,7 @@
 
 <div class="h-box">
     <div id="descriptionWrapper">
-        <p><span style="white-space:pre-wrap"><%= XML.parse_html(channel.description_html).xpath_node(%q(.//pre)).try &.content %></span></p>
+        <p><span style="white-space:pre-wrap"><%= XML.parse_html(channel.description_html).xpath_node(%q(.//pre)).try &.content if !channel.description_html.empty? %></span></p>
         <% sub_count_text = number_to_short_text(channel.sub_count) %>
         <%= rendered "components/subscribe_widget" %>
     </div>
@@ -63,7 +63,7 @@
 
 <hr>
 
-<div class="pure-g">
+<div class="pure-g playlist">
 <% items.each do |item| %>
     <%= rendered "components/item" %>
 <% end %>

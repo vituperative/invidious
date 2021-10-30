@@ -709,6 +709,9 @@ input[type="search"]:focus::placeholder {
 .pure-g.h-box {
   margin: -7px 0 -14px;
 }
+.pure-g.h-box.sort {
+  margin: -3px 0 -21px;
+}
 .pure-g.navbar.h-box {
   margin: 0;
 }
