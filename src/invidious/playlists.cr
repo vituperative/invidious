@@ -243,7 +243,7 @@ struct InvidiousPlaylist
 
   def thumbnail
     @thumbnail_id ||= PG_DB.query_one?("SELECT id FROM playlist_videos WHERE plid = $1 ORDER BY array_position($2, index) LIMIT 1", self.id, self.index, as: String) || "-----------"
-    "/vi_webp/#{@thumbnail_id}/mqdefault.webp"
+    "/vi/#{@thumbnail_id}/mqdefault.jpg"
   end
 
   def author_thumbnail
