@@ -628,9 +628,10 @@ h1, h2, h3, h4, h5, p,
   margin-top: 0;
   padding: 12px 20px 14px;
 }
-.channel-profile:hover ~ #descriptionWrapper,
-.channel-profile:active ~ #descriptionWrapper {
+.profile:hover ~ #descriptionWrapper,
+.profile:active ~ #descriptionWrapper {
   height: auto;
+  overflow: auto;
 }
 #logo > h1 {
   text-align: center;
