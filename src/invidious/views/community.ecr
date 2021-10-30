@@ -22,45 +22,40 @@
             <span><%= author %></span>
         </div>
     </div>
-    <div class="pure-u-1-3" style="text-align:right">
-        <div id="feedicon" style="text-align:right">
+    <div id="channel-links">
+            <% if !channel.auto_generated %>
+            <a href="/channel/<%= channel.ucid %>"><%= translate(locale, "Videos") %><i class="icon .ion-ios-film"></i></a>
+            <% end %>
+            <a href="/channel/<%= channel.ucid %>/playlists" title="<%= translate(locale, "Playlists") %>"><i class="icon .ion-ios-list"></i></a>
+            <a href="https://www.youtube.com/channel/<%= channel.ucid %>/community" title="<%= translate(locale, "View channel on YouTube") %>"><i class="icon ion-logo-youtube"></i></a>
             <a href="/feed/channel/<%= channel.ucid %>"><i class="icon ion-logo-rss"></i></a>
-        </div>
     </div>
 </div>
 
 <div class="h-box">
     <div id="descriptionWrapper">
         <p><span style="white-space:pre-wrap"><%= XML.parse_html(channel.description_html).xpath_node(%q(.//pre)).try &.content %></span></p>
+        <% sub_count_text = number_to_short_text(channel.sub_count) %>
+        <%= rendered "components/subscribe_widget" %>
     </div>
 </div>
 
 <div class="h-box">
-    <% sub_count_text = number_to_short_text(channel.sub_count) %>
-    <%= rendered "components/subscribe_widget" %>
+
 </div>
 
 <div class="pure-g h-box">
     <div class="pure-u-1-3">
-        <a href="https://www.youtube.com/channel/<%= channel.ucid %>/community"><%= translate(locale, "View channel on YouTube") %></a>
 <!--
         <div class="pure-u-1 pure-md-1-3">
             <a href="/redirect?referer=<%= env.get?("current_page") %>"><%= translate(locale, "Switch Invidious Instance") %></a>
-        </div>
--->
-        <% if !channel.auto_generated %>
-            <div class="pure-u-1 pure-md-1-3">
-                <a href="/channel/<%= channel.ucid %>"><%= translate(locale, "Videos") %></a>
-            </div>
-        <% end %>
-        <div class="pure-u-1 pure-md-1-3">
-            <a href="/channel/<%= channel.ucid %>/playlists"><%= translate(locale, "Playlists") %></a>
         </div>
         <div class="pure-u-1 pure-md-1-3">
             <% if channel.tabs.includes? "community" %>
                 <b><%= translate(locale, "Community") %></b>
             <% end %>
         </div>
+-->
     </div>
     <div class="pure-u-2-3"></div>
 </div>
