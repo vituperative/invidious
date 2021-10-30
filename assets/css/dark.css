@@ -951,6 +951,14 @@ input[type=checkbox]:focus, input[type=radio]:focus {
  top: 5px;
  right: 5px;
 }
+.playlist .vidtitle {
+  margin-bottom: -5px !important;
+}
+.playlist .channel_name {
+  margin: 5px 0 0 !important;
+  padding-left: 16px;
+  background: url(/author.svg) no-repeat left center / 12px;
+}
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
