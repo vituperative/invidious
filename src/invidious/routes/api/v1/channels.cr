@@ -40,10 +40,7 @@ module Invidious::Routes::API::V1::Channels
           json.array do
             if channel.banner
               qualities = {
-#                {width: 2560, height: 424},
-#                {width: 2120, height: 351},
                 {width: 1600, height: 265},
-                {width: 1060, height: 175},
               }
               qualities.each do |quality|
                 json.object do
@@ -55,8 +52,6 @@ module Invidious::Routes::API::V1::Channels
 
               json.object do
                 json.field "url", channel.banner.not_nil!.split("=w1060-")[0]
-                json.field "width", 512
-#                json.field "height", 288
                 json.field "height", 175
               end
             end
@@ -65,7 +60,6 @@ module Invidious::Routes::API::V1::Channels
 
         json.field "authorThumbnails" do
           json.array do
-#            qualities = {32, 48, 76, 100, 176, 512}
             qualities = {32, 48, 76, 100, 176}
 
             qualities.each do |quality|
@@ -107,7 +101,6 @@ module Invidious::Routes::API::V1::Channels
 
                 json.field "authorThumbnails" do
                   json.array do
-#                    qualities = {32, 48, 76, 100, 176, 512}
                     qualities = {32, 48, 76, 100, 176}
 
                     qualities.each do |quality|
