@@ -336,10 +336,14 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 1em;
 }
 #channel-links {
+  margin-top: -2px;
+  width: 33%;
   text-align: right;
 }
 #channel-links a {
-  margin: 4px 8px;
+  margin: 0 0 0 20px;
+  font-size: 120%;
+  color: #fff;
 }
 @media only screen and (max-aspect-ratio: 16/9) {
   .player-dimensions.vjs-fluid {
