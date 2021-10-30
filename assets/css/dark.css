@@ -621,10 +621,16 @@ h1, h2, h3, h4, h5, p,
 #descriptionWrapper {
   margin-top: -12px;
   padding: 24px 26px 4px;
+  height: 60px;
+  overflow: hidden;
 }
 #description-box #descriptionWrapper {
   margin-top: 0;
   padding: 12px 20px 14px;
+}
+.channel-profile:hover ~ #descriptionWrapper,
+.channel-profile:active ~ #descriptionWrapper {
+  height: auto;
 }
 #logo > h1 {
   text-align: center;
@@ -940,6 +946,11 @@ input[type=checkbox]:focus, input[type=radio]:focus {
 }
 #related .yt_author a {
   font-weight: 700;
+}
+#subscribe {
+ position: absolute;
+ right: 5px;
+ bottom: 5px;
 }
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
