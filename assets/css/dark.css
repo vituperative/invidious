@@ -50,6 +50,12 @@ body {
   animation: ease fade .1s 4s both;
   will-change: transform;
 }
+#vidinfo .channel-profile {
+  margin-bottom: -27px;
+}
+#vidinfo #descriptionWrapper {
+  padding-top: 40px;
+}
 .channel-profile > * {
   font-size: 1.17em;
   font-weight: 700;
@@ -911,6 +917,13 @@ input[type="search"]:focus::placeholder {
 #vidinfo {
   margin: 0 20px;
   width: calc(90% - 40px);
+  position: relative;
+}
+#vidinfo #pulbished-date {
+  position: absolute;
+  right: 5.5%;
+  top: 8%;
+  font-size: 90%;
 }
 @keyframes fade {
   from {filter: opacity(0)}
