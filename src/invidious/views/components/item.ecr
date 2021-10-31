@@ -24,7 +24,7 @@
                 <% if !env.get("preferences").as(Preferences).thin_mode %>
                     <div class="thumbnail">
 <!--                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail || "/").request_target %>"/>-->
-                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail) %>">
+                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail || "/") %>"/>
                         <p class="length"><%= number_with_separator(item.video_count) %> videos</p>
                     </div>
                 <% end %>
