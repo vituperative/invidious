@@ -5,7 +5,7 @@
             <a href="/channel/<%= item.ucid %>">
                 <% if !env.get("preferences").as(Preferences).thin_mode %>
                     <span class="authorthumb">
-                        <img loading="lazy" style="width:56.25%" src="/ggpht<%= URI.parse(item.author_thumbnail).request_target.gsub(/=s\d+/, "=s176") %>"/>
+                        <img loading="lazy" style="width:56.25%" src="/ggpht<%= URI.parse(item.author_thumbnail).request_target.gsub(/=s\d+/, "=s96") %>">
                     </span>
                 <% end %>
                 <p class="channel_name"dir="auto"><%= HTML.escape(item.author) %></p>
@@ -23,7 +23,8 @@
             <a style="width:100%" href="<%= url %>">
                 <% if !env.get("preferences").as(Preferences).thin_mode %>
                     <div class="thumbnail">
-                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail || "/").request_target %>"/>
+<!--                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail || "/").request_target %>"/>-->
+                        <img loading="eager" class="thumbnail" src="<%= URI.parse(item.thumbnail) %>">
                         <p class="length"><%= number_with_separator(item.video_count) %> videos</p>
                     </div>
                 <% end %>
