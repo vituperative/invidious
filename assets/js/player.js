@@ -636,7 +636,7 @@ if (window.location.pathname.startsWith("/embed/")) {
     // Create hyperlink for current instance
     redirect_element = document.createElement("a");
     redirect_element.setAttribute("href", `http://${window.location.host}/watch?v=${window.location.pathname.replace("/embed/","")}`)
-    redirect_element.appendChild(document.createTextNode("Invidious"))
+    redirect_element.appendChild(document.createTextNode("IncogTube"))
 
     watch_on_invidious_button.el().appendChild(redirect_element)
     watch_on_invidious_button.addClass("watch-on-invidious")
