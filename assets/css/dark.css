@@ -729,7 +729,7 @@ input[type="search"]:focus::placeholder {
   font-weight: 700;
   letter-spacing:.05em;
 }
-.pure-g {
+#spacer {
   margin-bottom: 20px;
 }
 .pure-g.h-box {
