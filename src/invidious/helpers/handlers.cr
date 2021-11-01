@@ -83,6 +83,7 @@ class FilteredCompressHandler < Kemal::Handler
 #        env.response.headers["Content-Encoding"] = "deflate"
 #        env.response.output = Compress::Deflate::Writer.new(env.response.output, sync_close: true)
 #
+#
       end
 
       call_next env
