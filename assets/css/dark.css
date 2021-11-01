@@ -736,7 +736,7 @@ input[type="search"]:focus::placeholder {
   margin: -7px 0 -14px;
 }
 .pure-g.h-box.sort {
-  margin: -3px 0 -21px;
+  margin: -3px 0 0;
 }
 .pure-g.navbar.h-box {
   margin: 0;
