@@ -389,6 +389,14 @@ th {
   margin: 4px 0 10px;
   width: 50%;
 }
+@media screen and (min-width: 1200px) {
+  .pure-u-1,
+  .pure-u-1-1,
+  .pure-u-24-24,
+  .pure-u-5-5 {
+    width: 50%;
+  }
+}
 #logo.pure-u-1 {
   width: 100%;
 }
