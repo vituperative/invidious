@@ -84,7 +84,7 @@ class FilteredCompressHandler < Kemal::Handler
 #        env.response.output = Compress::Deflate::Writer.new(env.response.output, sync_close: true)
 #
 #
-      end
+#      end
 
       call_next env
     {% end %}
