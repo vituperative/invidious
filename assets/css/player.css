@@ -203,7 +203,7 @@ vjs-menu-content
 }
 
 .video-js .vjs-poster {
-  background-size: auto;
+  background-size: contain;
   object-fit: cover;
 }
 
