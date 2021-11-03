@@ -207,8 +207,8 @@ div.thumbnail::before {
   z-index: 100;
   pointer-events: none;
   background: var(--tile) repeat center center / 4px;
-  mix-blend-mode: color-dodge;
-  animation: ease fade .1s 3.75s both;
+  mix-blend-mode: overlay;
+  animation: ease fade .1s 3.65s both;
 }
 div.thumbnail:hover::before, div.thumbnail:hover::after {
   pointer-events: none;
