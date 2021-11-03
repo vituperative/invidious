@@ -34,7 +34,7 @@
 .video-js.player-style-youtube .vjs-control-bar > .vjs-spacer {
   flex: 1;
   order: 2;
-} 
+}
 
 .video-js.player-style-youtube .vjs-play-progress .vjs-time-tooltip {
   display: none;
@@ -203,7 +203,7 @@ vjs-menu-content
 }
 
 .video-js .vjs-poster {
-  background-size: cover;
+  background-size: auto;
   object-fit: cover;
 }
 
