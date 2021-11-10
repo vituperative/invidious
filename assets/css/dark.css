@@ -696,11 +696,12 @@ footer {
   font-size: 0 !important;
 }
 #logo h1.pure-menu-heading::after {
+  margin-bottom: -30px;
   width: 100%;
   height: 120px;
   display: inline-block;
+  background: url(/logo.svg) no-repeat center center / 44%;
   content: "";
-  background: url(/logo.svg) no-repeat center center / 36%;
 }
 @media screen and (max-width: 1000px) {
   #logo h1.pure-menu-heading::after {
