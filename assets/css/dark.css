@@ -653,6 +653,9 @@ h1, h2, h3, h4, h5, p,
   padding: 12px 20px 4px;
   max-height: none;
 }
+#descriptionWrapper p {
+  padding: 0 10% 0 2%;
+}
 #logo > h1 {
   text-align: center;
 }
@@ -821,6 +824,7 @@ input[type="search"]:focus::placeholder {
 }
 #channel-banner {
   position: relative;
+  min-height: 40px;
 }
 #channel-banner::before {
   content: "";
@@ -834,13 +838,14 @@ input[type="search"]:focus::placeholder {
   right: 8px;
   bottom: 8px;
   background:  var(--tile) repeat center center / 4px;
-  mix-blend-mode: multiply;
+  mix-blend-mode: soft-light;
   contain: strict;
 }
 #channel-banner img {
   padding: 4px;
   width: calc(100% - 8px) !important;
   box-shadow: inset 0 0 0 1px #000, inset 0 0 0 2px #333, inset 0 0 0 3px #565353;
+  background: url(/logo_sm.svg) no-repeat center center / 80%;
 }
 .channel_desc {
   margin-top: -30px;
