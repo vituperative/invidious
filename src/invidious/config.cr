@@ -55,8 +55,8 @@ end
 class Config
   include YAML::Serializable
 
-  property channel_threads : Int32 = 8           # Number of threads to use for crawling videos from channels (for updating subscriptions)
-  property feed_threads : Int32 = 8              # Number of threads to use for updating feeds
+  property channel_threads : Int32 = 1           # Number of threads to use for crawling videos from channels (for updating subscriptions)
+  property feed_threads : Int32 = 1              # Number of threads to use for updating feeds
   property output : String = "STDOUT"            # Log file path or STDOUT
   property log_level : LogLevel = LogLevel::Info # Default log level, valid YAML values are ints and strings, see src/invidious/helpers/logger.cr
   property db : DBConfig? = nil                  # Database configuration with separate parameters (username, hostname, etc)
@@ -92,8 +92,8 @@ class Config
   property force_resolve : Socket::Family = Socket::Family::UNSPEC # Connect to YouTube over 'ipv6', 'ipv4'. Will sometimes resolve fix issues with rate-limiting (see https://github.com/ytdl-org/youtube-dl/issues/21729)
   property port : Int32 = 3000                                     # Port to listen for connections (overrided by command line argument)
   property host_binding : String = "0.0.0.0"                       # Host to bind (overrided by command line argument)
-  property pool_size : Int32 = 256                                 # Pool size for HTTP requests to youtube.com and ytimg.com (each domain has a separate pool of `pool_size`)
-  property use_quic : Bool = true                                  # Use quic transport for youtube api
+  property pool_size : Int32 = 100                                 # Pool size for HTTP requests to youtube.com and ytimg.com (each domain has a separate pool of `pool_size`)
+  property use_quic : Bool = false                                 # Use quic transport for youtube api
 
   @[YAML::Field(converter: Preferences::StringToCookies)]
   property cookies : HTTP::Cookies = HTTP::Cookies.new               # Saved cookies in "name1=value1; name2=value2..." format
