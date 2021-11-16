@@ -203,8 +203,7 @@ module Invidious::Routes::API::V1::Videos
         url = storyboard[:url]
         authority = /(i\d?).ytimg.com/.match(url).not_nil![1]?
         url = url.gsub("$M", i).gsub(%r(https://i\d?.ytimg.com/sb/), "")
-#        url = "#{HOST_URL}/sb/#{authority}/#{url}"
-        url = "/sb/#{authority}/#{url}"
+        url = "#{HOST_URL}/sb/#{authority}/#{url}"
 
         storyboard[:storyboard_height].times do |j|
           storyboard[:storyboard_width].times do |k|
