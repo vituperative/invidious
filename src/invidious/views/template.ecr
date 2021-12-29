@@ -34,8 +34,10 @@
     </style>
 </head>
 
-<% locale = LOCALES[env.get("preferences").as(Preferences).locale]? %>
-<% dark_mode = env.get("preferences").as(Preferences).dark_mode %>
+<%
+  locale = env.get("preferences").as(Preferences).locale
+  dark_mode = env.get("preferences").as(Preferences).dark_mode
+%>
 
 <body class="<%= dark_mode.blank? ? "no" : dark_mode %>-theme">
     <noscript><style>.script{display:none!important}</style></noscript>
