@@ -114,9 +114,9 @@
             </p>
 
             <% if user %>
-                <% playlists = PG_DB.query_all("SELECT id,title FROM playlists WHERE author = $1 AND id LIKE 'IV%'", user.email, as: {String, String}) %>
+                <% playlists = Invidious::Database::Playlists.select_user_created_playlists(user.email) %>
                 <% if !playlists.empty? %>
-                    <form data-onsubmit="return_false" class="pure-form pure-form-stacked" action="/playlist_ajax" method="post">
+                    <form data-onsubmit="return_false" class="pure-form pure-form-stacked" action="/playlist_ajax" method="post" target="_blank">
                         <div class="pure-control-group">
                             <label for="playlist_id"><%= translate(locale, "Add to playlist: ") %></label>
                             <select style="width:100%" name="playlist_id" id="playlist_id">
@@ -126,6 +126,9 @@
                             </select>
                         </div>
 
+                        <input type="hidden" name="csrf_token" value="<%= URI.encode_www_form(env.get?("csrf_token").try &.as(String) || "") %>">
+                        <input type="hidden" name="action_add_video" value="1">
+                        <input type="hidden" name="video_id" value="<%= video.id %>">
                         <button data-onclick="add_playlist_video" data-id="<%= video.id %>" type="submit" class="pure-button pure-button-primary">
                             <b><%= translate(locale, "Add to playlist") %></b>
                         </button>

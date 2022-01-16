@@ -303,13 +303,19 @@ def template_youtube_comments(comments, locale, thin_mode, is_replies = false)
     root = comments["comments"].as_a
     root.each do |child|
       if child["replies"]?
+        replies_count_text = translate_count(locale,
+          "comments_view_x_replies",
+          child["replies"]["replyCount"].as_i64 || 0,
+          NumberFormatting::Separator
+        )
+
         replies_html = <<-END_HTML
         <div id="replies" class="pure-g script">
           <div class="pure-u-1-24"></div>
           <div class="pure-u-23-24">
             <p>
               <a href="javascript:void(0)" data-continuation="#{child["replies"]["continuation"]}"
-                data-onclick="get_youtube_replies" data-load-replies>#{translate(locale, "View `x` replies", number_with_separator(child["replies"]["replyCount"]))}</a>
+                data-onclick="get_youtube_replies" data-load-replies>#{replies_count_text}</a>
             </p>
           </div>
         </div>
@@ -469,7 +475,7 @@ def template_reddit_comments(root, locale)
         <p>
           <a href="javascript:void(0)" data-onclick="toggle_parent">[ - ]</a>
           <b><a href="https://www.reddit.com/user/#{child.author}">#{child.author}</a></b>
-          #{translate(locale, "`x` points", number_with_separator(child.score))}
+          #{translate_count(locale, "comments_points_count", child.score, NumberFormatting::Separator)}
           <span title="#{child.created_utc.to_s(translate(locale, "%a %B %-d %T %Y UTC"))}">#{translate(locale, "`x` ago", recode_date(child.created_utc, locale))}</span>
           <a href="https://www.reddit.com#{child.permalink}" title="#{translate(locale, "permalink")}">#{translate(locale, "permalink")}</a>
           </p>
@@ -548,12 +554,12 @@ end
 
 def parse_content(content : JSON::Any) : String
   content["simpleText"]?.try &.as_s.rchop('\ufeff').try { |b| HTML.escape(b) }.to_s ||
-    content["runs"]?.try &.as_a.try { |r| content_to_comment_html(r).try &.to_s } || ""
+    content["runs"]?.try &.as_a.try { |r| content_to_comment_html(r).try &.to_s.gsub("\n", "<br>") } || ""
 end
 
 def content_to_comment_html(content)
   comment_html = content.map do |run|
-    text = HTML.escape(run["text"].as_s).gsub("\n", "<br>")
+    text = HTML.escape(run["text"].as_s)
 
     if run["bold"]?
       text = "<b>#{text}</b>"
