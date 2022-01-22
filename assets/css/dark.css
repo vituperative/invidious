@@ -308,14 +308,15 @@ div.thumbnail:active img {
 }
 .searchbar .pure-form input[type="search"] {
   margin-bottom: 1px;
-  padding: initial 0;
-  max-width: 600px;
+  width: 100%;
+  max-width: revert;
+  text-align: center;
   border: none;
   border-radius: 0;
-  box-shadow: 0 0;
-  -webkit-appearance: none;
+  box-shadow: 0;
   font-weight: 600;
   font-size: 110%;
+  -webkit-appearance: none;
 }
 .searchbar .pure-form::after {
   width: 70%;
