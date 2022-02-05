@@ -1,6 +1,6 @@
 {
     "generic_views_count": "{{count}} vue",
-    "generic_views_count_plural":"{{count}} vues",
+    "generic_views_count_plural": "{{count}} vues",
     "generic_videos_count": "{{count}} vidéo",
     "generic_videos_count_plural": "{{count}} vidéos",
     "generic_playlists_count": "{{count}} liste de lecture",
@@ -150,7 +150,7 @@
     "Create playlist": "Créer une liste de lecture",
     "Title": "Titre",
     "Playlist privacy": "Paramètres de confidentialité de la liste de lecture",
-    "Editing playlist `x`": "Liste de lecture modifier le `x`",
+    "Editing playlist `x`": "Modifier la liste de lecture `x`",
     "Show more": "Afficher plus",
     "Show less": "Afficher moins",
     "Watch on YouTube": "Voir la vidéo sur Youtube",
@@ -430,5 +430,12 @@
     "preferences_quality_dash_option_1440p": "1440p",
     "preferences_quality_dash_option_1080p": "1080p",
     "user_created_playlists": "`x` listes de lecture créées",
-    "preferences_save_player_pos_label": "Sauvegarder la durée actuelle de la vidéo : "
+    "preferences_save_player_pos_label": "Sauvegarder la position du lecteur : ",
+    "crash_page_you_found_a_bug": "Il semblerait que vous ayez trouvé un bug dans Invidious !",
+    "crash_page_refresh": "tenté de <a href=\"`x`\">rafraîchir la page</a>",
+    "crash_page_switch_instance": "essayé d'<a href=\"`x`\">utiliser une autre instance</a>",
+    "crash_page_read_the_faq": "lu la <a href=\"`x`\">Foire Aux Questions (FAQ)</a>",
+    "crash_page_search_issue": "<a href=\"`x`\">cherché ce bug sur Github</a>",
+    "crash_page_before_reporting": "Avant de signaler un bug, veuillez vous assurez que vous avez :",
+    "crash_page_report_issue": "Si aucune des solutions proposées ci-dessus ne vous a aidé, veuillez <a href=\"`x`\">ouvrir une \"issue\" sur GitHub</a> (de préférence en anglais) et d'y inclure le message suivant (ne PAS traduire le texte) :"
 }

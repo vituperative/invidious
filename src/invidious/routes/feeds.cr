@@ -265,7 +265,7 @@ module Invidious::Routes::Feeds
 
     if plid.starts_with? "IV"
       if playlist = Invidious::Database::Playlists.select(id: plid)
-        videos = get_playlist_videos(playlist, offset: 0, locale: locale)
+        videos = get_playlist_videos(playlist, offset: 0)
 
         return XML.build(indent: "  ", encoding: "UTF-8") do |xml|
           xml.element("feed", "xmlns:yt": "http://www.youtube.com/xml/schemas/2015",
@@ -362,7 +362,7 @@ module Invidious::Routes::Feeds
     end
 
     if ucid = HTTP::Params.parse(URI.parse(topic).query.not_nil!)["channel_id"]?
-      PG_DB.exec("UPDATE channels SET subscribed = $1 WHERE id = $2", Time.utc, ucid)
+      Invidious::Database::Channels.update_subscription_time(ucid)
     elsif plid = HTTP::Params.parse(URI.parse(topic).query.not_nil!)["playlist_id"]?
       Invidious::Database::Playlists.update_subscription_time(plid)
     else

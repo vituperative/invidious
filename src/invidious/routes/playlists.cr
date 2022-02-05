@@ -66,7 +66,7 @@ module Invidious::Routes::Playlists
     user = user.as(User)
 
     playlist_id = env.params.query["list"]
-    playlist = get_playlist(playlist_id, locale)
+    playlist = get_playlist(playlist_id)
     subscribe_playlist(user, playlist)
 
     env.redirect "/playlist?list=#{playlist.id}"
@@ -151,17 +151,13 @@ module Invidious::Routes::Playlists
     page = env.params.query["page"]?.try &.to_i?
     page ||= 1
 
-    begin
-      playlist = Invidious::Database::Playlists.select(id: plid, raise_on_fail: true)
-      if !playlist || playlist.author != user.email
-        return env.redirect referer
-      end
-    rescue ex
+    playlist = Invidious::Database::Playlists.select(id: plid)
+    if !playlist || playlist.author != user.email
       return env.redirect referer
     end
 
     begin
-      videos = get_playlist_videos(playlist, offset: (page - 1) * 100, locale: locale)
+      videos = get_playlist_videos(playlist, offset: (page - 1) * 100)
     rescue ex
       videos = [] of PlaylistVideo
     end
@@ -235,27 +231,21 @@ module Invidious::Routes::Playlists
     page = env.params.query["page"]?.try &.to_i?
     page ||= 1
 
-    begin
-      playlist = Invidious::Database::Playlists.select(id: plid, raise_on_fail: true)
-      if !playlist || playlist.author != user.email
-        return env.redirect referer
-      end
-    rescue ex
+    playlist = Invidious::Database::Playlists.select(id: plid)
+    if !playlist || playlist.author != user.email
       return env.redirect referer
     end
 
     query = env.params.query["q"]?
     if query
       begin
-        search_query, count, items, operators = process_search_query(query, page, user, region: nil)
+        search_query, items, operators = process_search_query(query, page, user, region: nil)
         videos = items.select(SearchVideo).map(&.as(SearchVideo))
       rescue ex
         videos = [] of SearchVideo
-        count = 0
       end
     else
       videos = [] of SearchVideo
-      count = 0
     end
 
     env.set "add_playlist_items", plid
@@ -314,7 +304,7 @@ module Invidious::Routes::Playlists
 
     begin
       playlist_id = env.params.query["playlist_id"]
-      playlist = get_playlist(playlist_id, locale).as(InvidiousPlaylist)
+      playlist = get_playlist(playlist_id).as(InvidiousPlaylist)
       raise "Invalid user" if playlist.author != user.email
     rescue ex
       if redirect
@@ -405,7 +395,7 @@ module Invidious::Routes::Playlists
     end
 
     begin
-      playlist = get_playlist(plid, locale)
+      playlist = get_playlist(plid)
     rescue ex
       return error_template(500, ex)
     end
@@ -422,7 +412,7 @@ module Invidious::Routes::Playlists
     end
 
     begin
-      videos = get_playlist_videos(playlist, offset: (page - 1) * 100, locale: locale)
+      videos = get_playlist_videos(playlist, offset: (page - 1) * 100)
     rescue ex
       return error_template(500, "Error encountered while retrieving playlist videos.<br>#{ex.message}")
     end

@@ -332,7 +332,7 @@
     "Search": "Keresési oldal",
     "Top": "Top",
     "About": "Leírás",
-    "Rating: ": "Besorolás: ",
+    "Rating: ": "Pontszám: ",
     "preferences_locale_label": "Nyelv: ",
     "View as playlist": "Megnézés lejátszási listában",
     "Default": "Alapértelmezett",
@@ -398,7 +398,7 @@
     "preferences_automatic_instance_redirect_label": "Váltáskor másik Invidious oldal automatikus betöltése (redirect.invidious.io töltődik, ha nem működne): ",
     "preferences_region_label": "Ország tartalmainak mutatása: ",
     "relevance": "Relevancia",
-    "rating": "Besorolás",
+    "rating": "Pontszám",
     "content_type": "Típus",
     "today": "Mai napon",
     "channel": "Csatorna",
@@ -430,5 +430,12 @@
     "short": "Rövid (4 percnél nem több)",
     "month": "Ebben a hónapban",
     "subtitles": "Felirattal",
-    "location": "Közelben"
+    "location": "Közelben",
+    "crash_page_you_found_a_bug": "Úgy néz ki, találtál egy hibát az Invidiousban.",
+    "crash_page_before_reporting": "Mielőtt jelentenéd a hibát:",
+    "crash_page_read_the_faq": "olvasd el a <a href=\"`x`\">Gyakran Ismételt Kérdéseket (GYIK)</a>",
+    "crash_page_search_issue": "járj utána a <a href=\"`x`\">már meglévő issue-knak a GitHubon</a>",
+    "crash_page_switch_instance": "válts át <a href=\"`x`\">másik Invidious-oldalra</a>",
+    "crash_page_refresh": "<a href=\"`x`\">töltsd újra</a> az oldalt",
+    "crash_page_report_issue": "Ha a fentiek után nem jutottál eredményre, akkor <a href=\"`x`\">nyiss egy új issue-t a GitHubon</a> (lehetőleg angol nyelven írj) és másold be pontosan a lenti szöveget (ezt nem kell lefordítani):"
 }

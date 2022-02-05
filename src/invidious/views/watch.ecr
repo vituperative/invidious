@@ -1,6 +1,8 @@
 <% ucid = video.ucid %>
 <% title = HTML.escape(video.title) %>
 <% author = HTML.escape(video.author) %>
+
+
 <% content_for "header" do %>
 <meta name="thumbnail" content="<%= thumbnail %>">
 <meta name="keywords" content="<%= video.keywords.join(",") %>">
@@ -297,11 +299,11 @@
                                             <% end %>
                                         </div>
                                         <div class="pure-u-10-24" style="text-align:right">
-                                            <% if views = rv["short_view_count_text"]?.try &.delete(", views watching") %>
-                                               <% if !views.empty? %>
-                                                    <b class="yt_views"><%= translate(locale, "`x` views", views) %></b>
-                                                <% end %>
-                                            <% end %>
+                                            <%=
+                                            views = rv["view_count"]?.try &.to_i?
+                                            views ||= rv["view_count_short"]?.try { |x| short_text_to_number(x) }
+                                            translate_count(locale, "generic_views_count", views || 0, NumberFormatting::Short)
+                                            %>
                                         </div>
                                     </div>
                                     <p class="vidtitle"><%= rv["title"] %></p>
