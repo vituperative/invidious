@@ -408,6 +408,13 @@ th {
 .pure-u-1.pure-u-md-12-24.searchbar {
   width: 100%;
 }
+@media screen and (max-width: 1200px) {
+  #contents.pure-u-1.pure-u-md-20-24,
+  .pure-u-1.pure-u-md-4-24,
+  .pure-u-1.pure-u-md-12-24.searchbar {
+    width: calc(100% - 20px);
+  }
+}
 .pure-button {
   display: inline-block;
   zoom: 1;
