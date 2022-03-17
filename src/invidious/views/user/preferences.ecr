@@ -49,16 +49,17 @@
             <div class="pure-control-group">
                 <label for="quality"><%= translate(locale, "preferences_quality_label") %></label>
                 <select name="quality" id="quality">
-                    <% {"dash", "hd720", "medium", "small"}.each do |option| %>
-                        <% if !(option == "dash" && CONFIG.disabled?("dash")) %>
+                    <% {<!--"dash", -->"hd720", "medium", "small"}.each do |option| %>
+<!--                        <% if !(option == "dash" && CONFIG.disabled?("dash")) %>-->
                             <option value="<%= option %>" <% if preferences.quality == option %> selected <% end %>><%= translate(locale, "preferences_quality_option_" + option) %></option>
-                        <% end %>
+<!--                        <% end %>-->
                     <% end %>
                 </select>
             </div>
 
+<!--
             <% if !CONFIG.disabled?("dash") %>
-                <div class="pure-control-group">
+                <div class="pure-control-group" hidden>
                     <label for="quality_dash"><%= translate(locale, "preferences_quality_dash_label") %></label>
                     <select name="quality_dash" id="quality_dash">
                         <% {"auto", "best", "4320p", "2160p", "1440p", "1080p", "720p", "480p", "360p", "240p", "144p", "worst"}.each do |option| %>
@@ -67,14 +68,15 @@
                     </select>
                 </div>
             <% end %>
-
+-->
             <div class="pure-control-group">
                 <label for="volume"><%= translate(locale, "preferences_volume_label") %></label>
                 <input name="volume" id="volume" data-onrange="update_volume_value" type="range" min="0" max="100" step="5" value="<%= preferences.volume %>">
                 <span class="pure-form-message-inline" id="volume-value"><%= preferences.volume %></span>
             </div>
 
-            <div class="pure-control-group">
+<!--
+            <div class="pure-control-group" hidden>
                 <label for="comments[0]"><%= translate(locale, "preferences_comments_label") %></label>
                 <% preferences.comments.each_with_index do |comments, index| %>
                     <select name="comments[<%= index %>]" id="comments[<%= index %>]">
@@ -84,7 +86,7 @@
                     </select>
                 <% end %>
             </div>
-
+-->
             <div class="pure-control-group">
                 <label for="captions[0]"><%= translate(locale, "preferences_captions_label") %></label>
                 <% preferences.captions.each_with_index do |caption, index| %>
@@ -166,6 +168,7 @@
                 <input name="thin_mode" id="thin_mode" type="checkbox" <% if preferences.thin_mode %>checked<% end %>>
             </div>
 
+<!--
             <% if env.get?("user") %>
                 <% feed_options = {"", "Popular", "Trending", "Subscriptions", "Playlists"} %>
             <% else %>
@@ -180,7 +183,7 @@
                     <% end %>
                 </select>
             </div>
-
+-->
             <div class="pure-control-group">
                 <label for="feed_menu"><%= translate(locale, "preferences_feed_menu_label") %></label>
                 <% (feed_options.size - 1).times do |index| %>
@@ -198,6 +201,7 @@
                 </div>
             <% end %>
 
+<!--
             <legend><%= translate(locale, "preferences_category_misc") %></legend>
 
             <div class="pure-control-group">
@@ -349,7 +353,7 @@
                     <a href="/delete_account?referer=<%= URI.encode_www_form(referer) %>"><%= translate(locale, "Delete account") %></a>
                 </div>
             <% end %>
-
+-->
             <div class="pure-controls">
                 <button type="submit" class="pure-button pure-button-primary"><%= translate(locale, "Save preferences") %></button>
             </div>
