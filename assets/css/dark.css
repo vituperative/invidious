@@ -994,49 +994,9 @@ input[type=checkbox]:focus, input[type=radio]:focus {
   padding-left: 16px;
   background: url(/author.svg) no-repeat left center / 12px;
 }
-
-.form[action^="/preferences"] .pure-form fieldset {
-  margin: 0 auto;
-  padding: 0.35em 0 0.75em;
-  border: 0;
-  display: flex;
-  flex-basis: fit-content;
-  flex-flow: wrap;
-  text-align: center;
-  align-content: first baseline;
-  width: 98%;
-}
-
-.form[action^="/preferences"] .pure-form-aligned .pure-control-group {
-  margin: 4px;
-  padding: 20px 10px;
-  min-width: 540px;
-  display: inline-block;
-  background: #f00;
-  flex-basis: min-content;
-  vertical-align: middle;
-  font-size: 85%;
-}
-
-.form[action^="/preferences"] .pure-form-aligned .pure-control-group label {
-  margin: 0 .7em 0 0;
-  width: 11em;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: right;
-  line-height: 1.2;
-  font-weight: 600;
-  opacity: .8;
-}
-
 .pure-form legend {
-  margin-bottom: 10px;
-  padding: 0.3em 0 15px;
-  font-size: 120%;
-  font-weight: 700;
   border-bottom: 1px solid #555;
 }
-
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
