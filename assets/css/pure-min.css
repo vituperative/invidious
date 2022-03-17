@@ -1056,12 +1056,11 @@ select, input[type=text], input[type=password] {
 form[action^="/preferences"].pure-form fieldset {
   margin: 0 auto;
   padding: 0.35em 0 0.75em;
-  border: 0;
-  display: flex;
-  flex-basis: fit-content;
-  flex-flow: wrap;
-  text-align: center;
   width: 98%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  border: none;
 }
 
 form[action^="/preferences"].pure-form-aligned .pure-control-group {
@@ -1069,10 +1068,10 @@ form[action^="/preferences"].pure-form-aligned .pure-control-group {
   padding: 20px 10px;
   min-width: 540px;
   display: inline-block;
-  background: rgba(0,0,0,.2);
   flex-basis: min-content;
-  vertical-align: middle;
   font-size: 85%;
+  border-radius: 5px;
+  background: rgba(0,0,0,.2);
 }
 
 form[action^="/preferences"].pure-form-aligned .pure-control-group label {
