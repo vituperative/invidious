@@ -1029,6 +1029,14 @@ input[type=checkbox]:focus, input[type=radio]:focus {
   opacity: .8;
 }
 
+.pure-form legend {
+  margin-bottom: 10px;
+  padding: 0.3em 0 15px;
+  font-size: 120%;
+  font-weight: 700;
+  border-bottom: 1px solid #555;
+}
+
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;
