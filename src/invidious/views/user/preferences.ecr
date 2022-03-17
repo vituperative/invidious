@@ -49,10 +49,7 @@
             <div class="pure-control-group">
                 <label for="quality"><%= translate(locale, "preferences_quality_label") %></label>
                 <select name="quality" id="quality">
-<!--
-                    <% {"dash","hd720", "medium", "small"}.each do |option| %>
--->
-                    <% {"hd720", "medium", "small"}.each do |option| %>
+                    <% {"dash", "hd720", "medium", "small"}.each do |option| %>
                         <% if !(option == "dash" && CONFIG.disabled?("dash")) %>
                             <option value="<%= option %>" <% if preferences.quality == option %> selected <% end %>><%= translate(locale, "preferences_quality_option_" + option) %></option>
                         <% end %>
@@ -60,7 +57,6 @@
                 </select>
             </div>
 
-<!--
             <% if !CONFIG.disabled?("dash") %>
                 <div class="pure-control-group" hidden>
                     <label for="quality_dash"><%= translate(locale, "preferences_quality_dash_label") %></label>
@@ -71,15 +67,14 @@
                     </select>
                 </div>
             <% end %>
--->
+
             <div class="pure-control-group">
                 <label for="volume"><%= translate(locale, "preferences_volume_label") %></label>
                 <input name="volume" id="volume" data-onrange="update_volume_value" type="range" min="0" max="100" step="5" value="<%= preferences.volume %>">
                 <span class="pure-form-message-inline" id="volume-value"><%= preferences.volume %></span>
             </div>
 
-<!--
-            <div class="pure-control-group" hidden>
+            <div class="pure-control-group">
                 <label for="comments[0]"><%= translate(locale, "preferences_comments_label") %></label>
                 <% preferences.comments.each_with_index do |comments, index| %>
                     <select name="comments[<%= index %>]" id="comments[<%= index %>]">
@@ -89,7 +84,7 @@
                     </select>
                 <% end %>
             </div>
--->
+
             <div class="pure-control-group">
                 <label for="captions[0]"><%= translate(locale, "preferences_captions_label") %></label>
                 <% preferences.captions.each_with_index do |caption, index| %>
@@ -171,14 +166,13 @@
                 <input name="thin_mode" id="thin_mode" type="checkbox" <% if preferences.thin_mode %>checked<% end %>>
             </div>
 
-<!--
             <% if env.get?("user") %>
                 <% feed_options = {"", "Popular", "Trending", "Subscriptions", "Playlists"} %>
             <% else %>
                 <% feed_options = {"", "Popular", "Trending"} %>
             <% end %>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="default_home"><%= translate(locale, "preferences_default_home_label") %></label>
                 <select name="default_home" id="default_home">
                     <% feed_options.each do |option| %>
@@ -197,7 +191,6 @@
                     </select>
                 <% end %>
             </div>
-
             <% if env.get? "user" %>
                 <div class="pure-control-group">
                     <label for="show_nick"><%= translate(locale, "preferences_show_nick_label") %></label>
@@ -205,9 +198,9 @@
                 </div>
             <% end %>
 
-            <legend><%= translate(locale, "preferences_category_misc") %></legend>
+            <legend hidden><%= translate(locale, "preferences_category_misc") %></legend>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="automatic_instance_redirect"><%= translate(locale, "preferences_automatic_instance_redirect_label") %></label>
                 <input name="automatic_instance_redirect" id="automatic_instance_redirect" type="checkbox" <% if preferences.automatic_instance_redirect %>checked<% end %>>
             </div>
@@ -356,7 +349,7 @@
                     <a href="/delete_account?referer=<%= URI.encode_www_form(referer) %>"><%= translate(locale, "Delete account") %></a>
                 </div>
             <% end %>
--->
+
             <div class="pure-controls">
                 <button type="submit" class="pure-button pure-button-primary"><%= translate(locale, "Save preferences") %></button>
             </div>
