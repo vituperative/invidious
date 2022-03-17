@@ -7,7 +7,7 @@
         <fieldset>
             <legend><%= translate(locale, "preferences_category_player") %></legend>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="video_loop"><%= translate(locale, "preferences_video_loop_label") %></label>
                 <input name="video_loop" id="video_loop" type="checkbox" <% if preferences.video_loop %>checked<% end %>>
             </div>
@@ -74,7 +74,7 @@
                 <span class="pure-form-message-inline" id="volume-value"><%= preferences.volume %></span>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="comments[0]"><%= translate(locale, "preferences_comments_label") %></label>
                 <% preferences.comments.each_with_index do |comments, index| %>
                     <select name="comments[<%= index %>]" id="comments[<%= index %>]">
@@ -141,7 +141,7 @@
                 </select>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="player_style"><%= translate(locale, "preferences_player_style_label") %></label>
                 <select name="player_style" id="player_style">
                     <% {"invidious", "youtube"}.each do |option| %>
@@ -181,7 +181,7 @@
                 </select>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="feed_menu"><%= translate(locale, "preferences_feed_menu_label") %></label>
                 <% (feed_options.size - 1).times do |index| %>
                     <select name="feed_menu[<%= index %>]" id="feed_menu[<%= index %>]">
