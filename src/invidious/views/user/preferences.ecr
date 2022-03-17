@@ -112,17 +112,22 @@
                 <input name="extend_desc" id="extend_desc" type="checkbox" checked>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="vr_mode"><%= translate(locale, "preferences_vr_mode_label") %></label>
                 <input name="vr_mode" id="vr_mode" type="checkbox" <% if preferences.vr_mode %>checked<% end %>>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="save_player_pos"><%= translate(locale, "preferences_save_player_pos_label") %></label>
                 <input name="save_player_pos" id="save_player_pos" type="checkbox" <% if preferences.save_player_pos %>checked<% end %>>
             </div>
 
             <legend><%= translate(locale, "preferences_category_visual") %></legend>
+
+            <div class="pure-control-group">
+                <label for="thin_mode"><%= translate(locale, "preferences_thin_mode_label") %></label>
+                <input name="thin_mode" id="thin_mode" type="checkbox" <% if preferences.thin_mode %>checked<% end %>>
+            </div>
 
             <div class="pure-control-group">
                 <label for="locale"><%= translate(locale, "preferences_locale_label") %></label>
@@ -161,11 +166,6 @@
                 </select>
             </div>
 -->
-
-            <div class="pure-control-group">
-                <label for="thin_mode"><%= translate(locale, "preferences_thin_mode_label") %></label>
-                <input name="thin_mode" id="thin_mode" type="checkbox" <% if preferences.thin_mode %>checked<% end %>>
-            </div>
 
             <% if env.get?("user") %>
                 <% feed_options = {"", "Popular", "Trending", "Subscriptions", "Playlists"} %>

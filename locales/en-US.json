@@ -63,7 +63,7 @@
     "preferences_autoplay_label": "Autoplay: ",
     "preferences_continue_label": "Play next by default: ",
     "preferences_continue_autoplay_label": "Autoplay next video: ",
-    "preferences_listen_label": "Listen by default: ",
+    "preferences_listen_label": "Audio only by default: ",
     "preferences_local_label": "Proxy videos: ",
     "preferences_watch_history_label": "Enable watch history: ",
     "preferences_speed_label": "Default speed: ",
