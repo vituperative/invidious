@@ -123,6 +123,7 @@ body a.channel-owner {
   justify-content: center;
   flex-wrap: wrap;
   contain: content;
+  display: none;
 }
 .feed-menu-item {
   text-align: center;
@@ -692,7 +693,7 @@ footer {
   display: none;
 }
 #logo h1.pure-menu-heading {
-  margin: -5% 0 5%;
+  margin: 0 0 5%;
   width: 100%;
   font-size: 0 !important;
 }

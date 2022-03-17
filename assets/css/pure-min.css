@@ -10,7 +10,7 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: BlinkMacSystemFont, -apple-system, Open Sans, segoe ui, Roboto,
+  font-family: Open Sans, segoe ui, BlinkMacSystemFont, -apple-system, Roboto,
   Oxygen, Ubuntu, Cantarell, fira sans, droid sans, helvetica neue, Helvetica,
   Arial, sans-serif !important;
   -ms-text-size-adjust: 100%;
