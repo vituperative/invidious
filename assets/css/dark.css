@@ -997,6 +997,7 @@ input[type=checkbox]:focus, input[type=radio]:focus {
 .pure-form legend {
   border-bottom: 1px solid #555;
 }
+
 @media screen and (max-width: 1000px) {
   .subscribers, .subscribers + p {
     font-size: 90%;

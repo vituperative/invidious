@@ -1053,7 +1053,7 @@ select, input[type=text], input[type=password] {
   border-bottom-width: 0;
 }
 
-.form[action^="/preferences"] .pure-form fieldset {
+.form[action^="/preferences"].pure-form fieldset {
   margin: 0 auto;
   padding: 0.35em 0 0.75em;
   border: 0;
@@ -1061,11 +1061,10 @@ select, input[type=text], input[type=password] {
   flex-basis: fit-content;
   flex-flow: wrap;
   text-align: center;
-  align-content: first baseline;
   width: 98%;
 }
 
-.form[action^="/preferences"] .pure-form-aligned .pure-control-group {
+.form[action^="/preferences"].pure-form-aligned .pure-control-group {
   margin: 4px;
   padding: 20px 10px;
   min-width: 540px;
@@ -1076,7 +1075,7 @@ select, input[type=text], input[type=password] {
   font-size: 85%;
 }
 
-.form[action^="/preferences"] .pure-form-aligned .pure-control-group label {
+.form[action^="/preferences"].pure-form-aligned .pure-control-group label {
   margin: 0 .7em 0 0;
   width: 11em;
   display: inline-block;
