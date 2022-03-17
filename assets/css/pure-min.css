@@ -1069,7 +1069,7 @@ form[action^="/preferences"].pure-form-aligned .pure-control-group {
   padding: 20px 10px;
   min-width: 540px;
   display: inline-block;
-  background: #f00;
+  background: rgba(0,0,0,.2);
   flex-basis: min-content;
   vertical-align: middle;
   font-size: 85%;

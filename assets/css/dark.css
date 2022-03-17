@@ -817,8 +817,7 @@ input[type="search"]:focus::placeholder {
   margin: -4px -40px 0 2px;
   width: 128px;
   height: 128px;
-  display: inline-block;
-  float: left;
+ float: left;
 }
 .authorthumb img {
   border-radius: 50%;
@@ -960,7 +959,7 @@ input[type="search"]:focus::placeholder {
   to {filter: opacity(0)}
 }
 @keyframes remove-bg {
-  0,99% {background-image: url(/nothumb.svg)}
+  0%,99% {background-image: url(/nothumb.svg)}
   100% {background-image: none}
 }
 input, input[type=checkbox], input[type=radio] {
