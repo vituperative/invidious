@@ -37,7 +37,7 @@
                 <input name="listen" id="listen" type="checkbox" <% if preferences.listen %>checked<% end %>>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="speed"><%= translate(locale, "preferences_speed_label") %></label>
                 <select name="speed" id="speed">
                     <% {2.0, 1.75, 1.5, 1.25, 1.0, 0.75, 0.5, 0.25}.each do |option| %>
@@ -96,7 +96,7 @@
                 <% end %>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="related_videos"><%= translate(locale, "preferences_related_videos_label") %></label>
                 <input name="related_videos" id="related_videos" type="checkbox" <% if preferences.related_videos %>checked<% end %>>
             </div>
@@ -106,9 +106,10 @@
                 <input name="annotations" id="annotations" type="checkbox" <% if preferences.annotations %>checked<% end %>>
             </div>
 
-            <div class="pure-control-group">
+            <div class="pure-control-group" hidden>
                 <label for="extend_desc"><%= translate(locale, "preferences_extend_desc_label") %></label>
-                <input name="extend_desc" id="extend_desc" type="checkbox" <% if preferences.extend_desc %>checked<% end %>>
+<!--                <input name="extend_desc" id="extend_desc" type="checkbox" <% if preferences.extend_desc %>checked<% end %>> -->
+                <input name="extend_desc" id="extend_desc" type="checkbox" checked>
             </div>
 
             <div class="pure-control-group">
