@@ -275,6 +275,16 @@ end
 struct Video
   include DB::Serializable
 
+  # Version of the JSON structure
+  # It prevents us from loading an incompatible version from cache
+  # (either newer or older, if instances with different versions run
+  # concurrently, e.g during a version upgrade rollout).
+  #
+  # NOTE: don't forget to bump this number if any change is made to
+  # the `params` structure in videos/parser.cr!!!
+  #
+  SCHEMA_VERSION = 2
+
   property id : String
 
   @[DB::Field(converter: Video::JSONConverter)]
@@ -541,6 +551,10 @@ struct Video
   def average_rating : Float64
     # (likes / (likes + dislikes) * 4 + 1)
     info["videoDetails"]["averageRating"]?.try { |t| t.as_f? || t.as_i64?.try &.to_f64 }.try &.round(4) || 0.0
+  end
+
+  def schema_version : Int
+    return info["version"]?.try &.as_i || 1
   end
 
   def published : Time
@@ -1081,7 +1095,8 @@ def get_video(id, refresh = true, region = nil, force_refresh = false)
     if (refresh &&
        (Time.utc - video.updated > 10.minutes) ||
        (video.premiere_timestamp.try &.< Time.utc)) ||
-       force_refresh
+       force_refresh ||
+       video.schema_version != Video::SCHEMA_VERSION # cache control
       begin
         video = fetch_video(id, region)
         Invidious::Database::Videos.update(video)
